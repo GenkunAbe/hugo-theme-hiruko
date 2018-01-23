@@ -5,6 +5,9 @@
 	<main class="hiruko-container">
 		<div class="articles">
 		{{ range $name, $page := .Site.RegularPages }}
+			{{ if eq $page.Params.pagetype "about" }}
+			{{ else if eq $page.Params.pagetype "gallery" }}
+			{{ else }}
 			<article class="post-block">
 				<h2 class="post-title">
 					<a href="{{ .Permalink }}" class="post-link">{{ $page.Title }}</a>
@@ -22,9 +25,11 @@
 					</div>
 				</div>
 			</article>
+			{{ end }}
 		{{ end }}
 		</div>
 	</main>
 </div>
 
 {{ partial "footer.html" . }}
+{{ partial "after-footer.html" . }}

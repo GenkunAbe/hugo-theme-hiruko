@@ -12,12 +12,15 @@
   <meta name="msapplication-navbutton-color" content="#e0e0e0">
   <meta name="apple-mobile-web-app-status-bar-style" content="#e0e0e0">
 
-  <link rel="icon" href="/favicon.png">
+  <link rel="icon" href="/media/favicon.png">
 
   <link href="/css/bootstrap.min.css", rel="stylesheet">
   <link href="/css/font-awesome.min.css", rel="stylesheet">
+  {{ if eq .Params.vertical true }}
+  <link href="/css/main-vertical.css", rel="stylesheet">
+  {{ else }}
   <link href="/css/main.css", rel="stylesheet">
-
+  {{ end }}
   <script src="{{ "/js/math-code.js" | relURL }}"></script>
 
   {{ .Hugo.Generator }}

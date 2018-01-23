@@ -3,20 +3,19 @@
 <div class="wrap">
   {{ partial "navbar.html" . }}
   <main class="hiruko-container">
-    <div class="post">
-      <article class="post-block">
-        <h1 class="post-title">{{ .Title }}</h1>
-        <div class="post-info">{{ .Date.Format "Jan 2, 2006" }}</div>
-        <div class="post-entry">{{ .Content }}</div>
-      </article>
-    </div>
+    {{ if eq .Params.pagetype "about" }}
+      {{ partial "about.html" . }}
+    {{ else }}
+      {{ partial "post.html" . }}
+    {{ end }}
 
-    <div class="disqus-comments">
-      <div class="comments">
-        <div id="disqus_thread"></div>
-      </div>
-    </div>
+    {{ if eq .Params.vertical true }}
+      {{ partial "footer.html" . }}
+    {{ end }}
   </main>
 </div>
 
-{{ partial "footer.html" . }}
+{{ if ne .Params.vertical true }}
+  {{ partial "footer.html" . }}
+{{ end }}
+{{ partial "after-footer.html" . }}
