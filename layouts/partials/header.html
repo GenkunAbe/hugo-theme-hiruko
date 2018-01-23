@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Description }}">
+  <meta name="keywords" content="{{ .Keywords }}">
+  <meta name="author" content="{{ .Site.Author.name }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e0e0e0">
+  <meta name="msapplication-navbutton-color" content="#e0e0e0">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#e0e0e0">
+
+  <link rel="icon" href="/favicon.png">
+
+  <link href="/css/bootstrap.min.css", rel="stylesheet">
+  <link href="/css/font-awesome.min.css", rel="stylesheet">
+  <link href="/css/main.css", rel="stylesheet">
+
+  <script src="{{ "/js/math-code.js" | relURL }}"></script>
+
+  {{ .Hugo.Generator }}
+  
+</head>
+<body>

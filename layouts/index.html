@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+
+<div class="wrap">
+	{{ partial "navbar.html" . }}
+	<main class="hiruko-container">
+		<div class="articles">
+		{{ range $name, $page := .Site.RegularPages }}
+			<article class="post-block">
+				<h2 class="post-title">
+					<a href="{{ .Permalink }}" class="post-link">{{ $page.Title }}</a>
+				</h2>
+				<div class="post-info">{{ $page.Date.Format "Jan 2, 2006" }}</div>
+				<div class="post-entry">{{ .Summary }}</div>
+				<div class="post-meta">
+					<a href="{{ .Permalink }}" class="article-more">Continue Reading</a>
+					<div class="post-tags-box">
+					{{ with $page.Params.tags }}
+						{{ range $page.Params.tags}}
+						<a class="tag-link" href="/tags/{{ . | urlize }}">{{ . }}</a>
+						{{ end }}
+					{{ end }}
+					</div>
+				</div>
+			</article>
+		{{ end }}
+		</div>
+	</main>
+</div>
+
+{{ partial "footer.html" . }}

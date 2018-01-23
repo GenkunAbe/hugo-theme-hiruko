@@ -1,0 +1,82 @@
+  <footer>
+    <div class="copyright">
+      <p>Copyright © &nbsp;GENKUN&nbsp;2017 - 2018&nbsp;|&nbsp;
+        <a href="https://gohugo.io/" target="_blank">Hugo</a> Theme
+        <a href="https://github.com/GenkunAbe/hugo-theme-hiruko" target="_blank">Hiruko</a>
+      </p>
+    </div>
+  </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    (function() {
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  // remove <code></code>
+          continue;
+        }
+      }
+      i++;
+    }
+  })();
+  </script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    },
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'extpfeil.js']
+    },
+    "HTML-CSS": { 
+      availableFonts: ["TeX"],
+      scale: 85
+    },
+    CommonHTML: {
+      scale: 85
+    },
+    SVG: {
+      scale: 85
+    }
+  });
+  </script>
+  <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>(function (u, c) {
+      var d = document, t = 'script', o = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(e); }); }
+      s.parentNode.insertBefore(o, s);
+    })('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function () {
+      pangu.spacingPage();
+    });
+  </script>
+  <script>var url_parts = window.location.href.split("?");
+    var disqus_url = url_parts[0];
+    (function () {
+      console.log("enter disqus");
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = "//genkun.disqus.com/embed.js";
+      (document.head || d.body).appendChild(dsq);
+    })();
+  </script>
+</body>
+</html>
