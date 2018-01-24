@@ -7,7 +7,7 @@
     {{ if ne .Params.pagetype "gallery" }}
     <div class="post-tags-box">
       {{ range $id, $name := .Params.tags }}
-      <a class="tag-link" href="{{ " /tags/ " | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>, 
+      <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>, 
       {{ end }}
     </div>
     {{ end }}
@@ -17,24 +17,26 @@
 
 {{ if ne .Params.pagetype "gallery" }}
 <div class="post-nav">
-  {{ if .Prev }}
+  {{ if .PrevInSection }}
   <div class="prev-wrap col-md-6 col-xs-6">
     <i class="fa fa-angle-double-left"></i>
-    <a href="{{.Prev.Permalink}}" class="prev-post">{{.Prev.Title}}</a>
+    <a href="{{.PrevInSection.Permalink}}" class="prev-post">{{.PrevInSection.Title}}</a>
   </div>
   {{ end }}
 
-  {{ if .Next }}
+  {{ if .NextInSection }}
   <div class="next-wrap col-md-6 col-xs-6">
-    <a href="{{.Next.Permalink}}" class="prev-post">{{.Next.Title}}</a>
+    <a href="{{.NextInSection.Permalink}}" class="prev-post">{{.NextInSection.Title}}</a>
     <i class="fa fa-angle-double-right"></i>
   </div>
   {{ end }}
 </div>
 {{ end }}
 
+{{ if eq .Params.comments true }}
 <div class="disqus-comments">
   <div class="comments">
     <div id="disqus_thread"></div>
   </div>
 </div>
+{{ end }}

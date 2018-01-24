@@ -15,7 +15,7 @@
 		<h3 class="aside-title">ALL CATEGORIES</h3>
 		<div class="all-tags-box">
 			{{range $name, $taxonomy := .Site.Taxonomies.categories}}
-			<a class="category-link" href="{{ " /categories/ " | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+			<a class="category-link" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
 			<br> {{end}}
 		</div>
 	</div>
@@ -24,7 +24,7 @@
 		<h3 class="aside-title">ALL TAGS</h3>
 		<div class="all-tags-box">
 			{{range $name, $taxonomy := .Site.Taxonomies.tags}}
-			<a class="tag-link" href="{{ " /tags/ " | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+			<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
 			{{end}}
 		</div>
 	</div>

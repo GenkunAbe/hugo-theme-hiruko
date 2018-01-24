@@ -1,8 +1,21 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script src="/js/script.js"></script>
+
+<script>(function (u, c) {
+    var d = document, t = 'script', o = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(e); }); }
+    s.parentNode.insertBefore(o, s);
+})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function () {
+    pangu.spacingPage();
+});
+</script>
+
+{{ if ne .Params.mathjax false }}
 <script>
     (function () {
         var i, text, code, codes = document.getElementsByTagName('code');
@@ -50,16 +63,9 @@
   });
   </script>
 <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>(function (u, c) {
-        var d = document, t = 'script', o = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        o.src = u;
-        if (c) { o.addEventListener('load', function (e) { c(e); }); }
-        s.parentNode.insertBefore(o, s);
-    })('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function () {
-        pangu.spacingPage();
-    });
-</script>
+{{ end }}
+
+{{ if eq .Params.comments true }}
 <script>var url_parts = window.location.href.split("?");
     var disqus_url = url_parts[0];
     (function () {
@@ -71,6 +77,8 @@
         (document.head || d.body).appendChild(dsq);
     })();
 </script>
+{{ end }}
+
 {{ if eq .Params.vertical true }}
 <script>
     $(document).ready(function () {
@@ -81,6 +89,6 @@
     });
 </script>
 {{ end }}
-</body>
 
+</body>
 </html>
