@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<div class="wrap">
+  {{ partial "navbar.html" . }}
+  <main class="hiruko-container">
+    {{ if eq .Params.pagetype "about" }}
+      {{ partial "about.html" . }}
+    {{ else }}
+      {{ partial "post.html" . }}
+    {{ end }}
+
+    {{ if eq .Params.vertical true }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+  </main>
+</div>
+
+{{ if ne .Params.vertical true }}
+  {{ partial "footer.html" . }}
+{{ end }}
+{{ partial "after-footer.html" . }}
