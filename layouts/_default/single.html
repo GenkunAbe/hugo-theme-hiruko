@@ -3,7 +3,8 @@
 <div class="wrap">
   {{ partial "navbar.html" . }}
   <main class="hiruko-container">
-    {{ if eq .Params.pagetype "about" }}
+
+    {{ if eq .Params.type "about" }}
       {{ partial "about.html" . }}
     {{ else }}
       {{ partial "post.html" . }}
@@ -12,6 +13,7 @@
     {{ if eq .Params.vertical true }}
       {{ partial "footer.html" . }}
     {{ end }}
+    
   </main>
 </div>
 
