@@ -345,9 +345,9 @@ code {
   padding: 2px 4px;
   word-wrap: break-word;
   color: #4d4d4c;
-  background: #f7f7f7;
+  background: #FAFAFA;
   border-radius: 3px;
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
 }
 
 pre code {
@@ -836,7 +836,7 @@ blockquote {
 }
 
 .post-entry .highlight {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .post-entry table.js-file-line-container {
@@ -848,14 +848,18 @@ blockquote {
   overflow: auto;
   padding: 0;
   font-size: 0.8125rem;
-  background: #f7f7f7 !important;
+  background: #FAFAFA !important;
   line-height: 1.6;
 }
 
 .highlight pre {
   border: none;
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 10px 0;
+}
+
+.highlight div {
+  background: #FAFAFA !important;
 }
 
 .highlight table {
@@ -870,15 +874,14 @@ blockquote {
 }
 
 .post-entry pre {
-  padding: 0;
   font-size: 0.8125rem;
-  background: #f7f7f7;
+  background: #FAFAFA;
   line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 12px;
   overflow: auto;
   white-space: pre;
   word-wrap: normal;
+  margin-bottom: 30px;
 }
 
 .post-entry pre .line {
@@ -908,7 +911,7 @@ blockquote {
 .code pre {
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #f7f7f7;
+  background-color: #FAFAFA;
 }
 
 .post-entry .gist .gist-file {

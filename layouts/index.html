@@ -5,7 +5,7 @@
 	<main class="hiruko-container">
 		<div class="articles">
 		{{ range $name, $page := .Site.Pages }}
-			{{ if eq $page.Params.pagetype "post" }}
+			{{ if eq $page.Params.type "post" }}
 			<article class="post-block">
 				<h2 class="post-title">
 					<a href="{{ .Permalink }}" class="post-link">{{ $page.Title }}</a>
