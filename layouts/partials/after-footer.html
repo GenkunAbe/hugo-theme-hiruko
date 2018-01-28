@@ -8,15 +8,27 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script>(function (u, c) {
-    var d = document, t = 'script', o = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(e); }); }
-    s.parentNode.insertBefore(o, s);
-})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function () {
-    pangu.spacingPage();
-});
+{{ if eq .Params.vertical true }}
+<script>
+    $(document).ready(function () {
+      $('html, body, *').mousewheel(function(e, delta) {
+          this.scrollLeft += (delta * 100);
+          e.preventDefault();
+      });
+    });
+</script>
+{{ end }}
+
+<script>
+    (function (u, c) {
+        var d = document, t = 'script', o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(e); }); }
+        s.parentNode.insertBefore(o, s);
+    })('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function () {
+        pangu.spacingPage();
+    });
 </script>
 
 {{ if ne .Params.mathjax false }}
@@ -42,35 +54,37 @@
         }
     })();
 </script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({
-    extensions: ['tex2jax.js'],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-    },
-    TeX: {
-      extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'extpfeil.js']
-    },
-    "HTML-CSS": { 
-      availableFonts: ["TeX"],
-      scale: 85
-    },
-    CommonHTML: {
-      scale: 85
-    },
-    SVG: {
-      scale: 85
-    }
-  });
-  </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ['tex2jax.js'],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        },
+        TeX: {
+        extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'extpfeil.js']
+        },
+        "HTML-CSS": { 
+        availableFonts: ["TeX"],
+        scale: 85
+        },
+        CommonHTML: {
+        scale: 85
+        },
+        SVG: {
+        scale: 85
+        }
+    });
+</script>
 <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {{ end }}
 
 {{ if eq .Params.comments true }}
-<script>var url_parts = window.location.href.split("?");
+<script>
+    var url_parts = window.location.href.split("?");
     var disqus_url = url_parts[0];
     (function () {
         console.log("enter disqus");
@@ -80,17 +94,6 @@
         dsq.src = "//{{ .Site.Params.disqus }}.disqus.com/embed.js";
         (document.head || d.body).appendChild(dsq);
     })();
-</script>
-{{ end }}
-
-{{ if eq .Params.vertical true }}
-<script>
-    $(document).ready(function () {
-      $('html, body, *').mousewheel(function(e, delta) {
-          this.scrollLeft += (delta * 100);
-          e.preventDefault();
-      });
-    });
 </script>
 {{ end }}
 
