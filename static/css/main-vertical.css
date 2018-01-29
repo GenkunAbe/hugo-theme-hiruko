@@ -1267,6 +1267,7 @@ h3.aside-title {
 
 .paginator,
 .post-nav {
+  width: 52px;
   height: 72%;
   margin: 14% auto;
   overflow: hidden;
@@ -1274,6 +1275,7 @@ h3.aside-title {
 
 .paginator a,
 .post-nav a {
+  width: 22px;
   color: #656565;
   font-family: "Noto Sans SC", 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
   text-transform: uppercase;
