@@ -1,28 +1,4 @@
-*,
-html,
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-label,
-fieldset,
-input,
-p,
-blockquote,
-th,
-td {
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
   margin: 0;
   padding: 0
 }
@@ -50,35 +26,20 @@ table {
   border-spacing: 0
 }
 
-fieldset,
-img {
+fieldset, img {
   border: 0
 }
 
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
+address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
   font-weight: normal
 }
 
-caption,
-th {
+caption, th {
   text-align: left
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal
 }
@@ -107,8 +68,7 @@ h6 {
   font-size: 1rem;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: ''
 }
 
@@ -124,14 +84,11 @@ a img {
   border: none
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  FONT-IMPORT
 
 /*-----------------------------------------------------------------------------------*/
-
 
 @font-face {
   font-family: 'Oswald';
@@ -147,11 +104,7 @@ a img {
 @font-face {
   font-family: 'Noto Sans SC';
   src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot');
-  src:
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.woff') format('woff'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.ttf') format('truetype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.svg') format('svg');
+  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot?#font-spider') format('embedded-opentype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.woff') format('woff'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.ttf') format('truetype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -159,22 +112,14 @@ a img {
 @font-face {
   font-family: 'Noto Sans SC';
   src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot');
-  src:
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.woff') format('woff'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.ttf') format('truetype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.svg') format('svg');
+  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot?#font-spider') format('embedded-opentype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.woff') format('woff'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.ttf') format('truetype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.svg') format('svg');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Gen Ryu Min TW';
   src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot');
-  src:
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff') format('woff'),
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.ttf') format('truetype'),
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.svg') format('svg');
+  src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot?#font-spider') format('embedded-opentype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff') format('woff'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.ttf') format('truetype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -182,22 +127,14 @@ a img {
 @font-face {
   font-family: 'Gen Ryu Min TW';
   src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot');
-  src:
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff') format('woff'),
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.ttf') format('truetype'),
-    url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.svg') format('svg');
+  src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot?#font-spider') format('embedded-opentype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff') format('woff'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.ttf') format('truetype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.svg') format('svg');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'AR PL KaitiM GB';
   src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot');
-  src:
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.woff') format('woff'),
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.ttf') format('truetype'),
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.svg') format('svg');
+  src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot?#font-spider') format('embedded-opentype'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.woff') format('woff'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.ttf') format('truetype'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -205,11 +142,7 @@ a img {
 @font-face {
   font-family: 'Vollkorn';
   src: url('../fonts/Vollkorn/Vollkorn-Semibold.eot');
-  src:
-    url('../fonts/Vollkorn/Vollkorn-Semibold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Vollkorn/Vollkorn-Semibold.woff') format('woff'),
-    url('../fonts/Vollkorn/Vollkorn-Semibold.ttf') format('truetype'),
-    url('../fonts/Vollkorn/Vollkorn-Semibold.svg') format('svg');
+  src: url('../fonts/Vollkorn/Vollkorn-Semibold.eot?#font-spider') format('embedded-opentype'), url('../fonts/Vollkorn/Vollkorn-Semibold.woff') format('woff'), url('../fonts/Vollkorn/Vollkorn-Semibold.ttf') format('truetype'), url('../fonts/Vollkorn/Vollkorn-Semibold.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -217,16 +150,11 @@ a img {
 @font-face {
   font-family: 'Vollkorn';
   src: url('../fonts/Vollkorn/Vollkorn-Bold.eot');
-  src:
-    url('../fonts/Vollkorn/Vollkorn-Bold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Vollkorn/Vollkorn-Bold.woff') format('woff'),
-    url('../fonts/Vollkorn/Vollkorn-Bold.ttf') format('truetype'),
-    url('../fonts/Vollkorn/Vollkorn-Bold.svg') format('svg');
+  src: url('../fonts/Vollkorn/Vollkorn-Bold.eot?#font-spider') format('embedded-opentype'), url('../fonts/Vollkorn/Vollkorn-Bold.woff') format('woff'), url('../fonts/Vollkorn/Vollkorn-Bold.ttf') format('truetype'), url('../fonts/Vollkorn/Vollkorn-Bold.svg') format('svg');
   font-weight: bold;
 }
 
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  BOOTSTRAP
 
@@ -241,9 +169,7 @@ a img {
   margin: 0px;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  2. BASE CSS
 /*-----------------------------------------------------------------------------------*/
@@ -280,7 +206,7 @@ main {
   width: 100%;
   max-height: 100%;
   margin: 0 auto;
-  padding: 80px 100px 0 0;
+  padding-top: 80px;
   overflow-x: scroll;
   text-align: justify;
 }
@@ -291,12 +217,7 @@ main::after {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
 }
 
@@ -310,11 +231,7 @@ a {
   color: #424243;
 }
 
-a:hover,
-a:link,
-a:visited,
-a:active,
-a:focus {
+a:hover, a:link, a:visited, a:active, a:focus {
   text-decoration: none;
   color: #000;
 }
@@ -339,10 +256,7 @@ pre {
   overflow: auto;
 }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 0.875rem;
 }
@@ -379,69 +293,31 @@ pre .comment {
   color: #8e908c;
 }
 
-pre .variable,
-pre .attribute,
-pre .tag,
-pre .regexp,
-pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .css .class,
-pre .css .pseudo {
+pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
   color: #c82829;
 }
 
-pre .number,
-pre .preprocessor,
-pre .built_in,
-pre .literal,
-pre .params,
-pre .constant,
-pre .command {
+pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant, pre .command {
   color: #f5871f;
 }
 
-pre .ruby .class .title,
-pre .css .rules .attribute,
-pre .string,
-pre .value,
-pre .inheritance,
-pre .header,
-pre .ruby .symbol,
-pre .xml .cdata,
-pre .special,
-pre .number,
-pre .formula {
+pre .ruby .class .title, pre .css .rules .attribute, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata, pre .special, pre .number, pre .formula {
   color: #718c00;
 }
 
-pre .title,
-pre .css .hexcolor {
+pre .title, pre .css .hexcolor {
   color: #3e999f;
 }
 
-pre .function,
-pre .python .decorator,
-pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
-pre .perl .sub,
-pre .javascript .title,
-pre .coffeescript .title {
+pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
   color: #4271ae;
 }
 
-pre .keyword,
-pre .javascript .function {
+pre .keyword, pre .javascript .function {
   color: #8959a8;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  3. NAVIGATION
 /*-----------------------------------------------------------------------------------*/
@@ -550,9 +426,7 @@ h1.prince-log a {
   text-decoration: none;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  6. POST LAYOUT
 /*-----------------------------------------------------------------------------------*/
@@ -644,14 +518,12 @@ h1.prince-log a {
   padding: 0px;
 }
 
-.post-entry #more,
-.post-entry .fancybox {
+.post-entry #more, .post-entry .fancybox {
   text-decoration: none;
   border: none;
 }
 
-#more:hover,
-.post-entry .fancybox:hover {
+#more:hover, .post-entry .fancybox:hover {
   background: transparent;
 }
 
@@ -660,25 +532,13 @@ h1.prince-log a {
   padding: 0px;
 }
 
-.post-entry p,
-.post-entry h1,
-.post-entry h2,
-.post-entry h3,
-.post-entry h4,
-.post-entry h5,
-.post-entry h6,
-.post-entry hr {
+.post-entry p, .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6, .post-entry hr {
   margin-left: 32px;
   font-family: "Vollkorn", 'Gen Ryu Min TW', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
   line-height: 2.2;
 }
 
-.post-entry h1,
-.post-entry h2,
-.post-entry h3,
-.post-entry h4,
-.post-entry h5,
-.post-entry h6 {
+.post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 {
   color: #000;
   font-weight: 700;
 }
@@ -720,13 +580,13 @@ blockquote {
 
 .post-entry blockquote {
   /* background-color: #f4f4f4; */
-  margin-bottom: 20px;
+  margin-left: 32px;
 }
 
 .post-entry blockquote p {
   /* border-left: 3px solid #424243; */
+  padding-top: 18px;
   color: #999;
-  padding: 28px 28px;
   font-family: 'AR PL KaitiM GB', "Georgia";
   font-size: 1.25rem;
   line-height: 2;
@@ -772,11 +632,9 @@ blockquote {
   margin-top: 16px;
 }
 
-.post-entry dl,
-.post-entry ul,
-.post-entry ol {
+.post-entry dl, .post-entry ul, .post-entry ol {
   padding-top: 19px;
-  margin-left: 20px;
+  margin-left: 32px;
 }
 
 .post-entry ul li {
@@ -845,8 +703,7 @@ blockquote {
   margin-bottom: 0px;
 }
 
-.post-entry pre,
-.post-entry .highlight {
+.post-entry pre, .post-entry .highlight {
   overflow: auto;
   padding: 0;
   font-size: 0.8125rem;
@@ -888,8 +745,7 @@ blockquote {
   height: 20px;
 }
 
-.post-entry pre,
-.post-entry code {
+.post-entry pre, .post-entry code {
   font-family: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
 }
 
@@ -949,9 +805,7 @@ blockquote {
   margin-bottom: 20px;
 }
 
-.video-container iframe,
-.article-entry .video-container object,
-.article-entry .video-container embed {
+.video-container iframe, .article-entry .video-container object, .article-entry .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -1021,9 +875,7 @@ a.article-more:hover {
   color: #000;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  GALLERY
 /*-----------------------------------------------------------------------------------*/
@@ -1032,9 +884,7 @@ a.article-more:hover {
   display: inline-block;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  POST
 /*-----------------------------------------------------------------------------------*/
@@ -1042,8 +892,8 @@ a.article-more:hover {
 .post {
   height: 72%;
   margin: 14% auto;
+  padding-right: 100px;
 }
-
 
 /*  ARCHIVE
 /*-----------------------------------------------------------------------------------*/
@@ -1054,9 +904,7 @@ a.article-more:hover {
   }
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  ASIDE
 /*-----------------------------------------------------------------------------------*/
@@ -1067,9 +915,7 @@ aside.sidebar {
   box-sizing: border-box;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  ARCHIVE-POST
 /*-----------------------------------------------------------------------------------*/
@@ -1126,8 +972,7 @@ aside.sidebar {
   }
 }
 
-.post-item a:hover .post-title,
-.post-item a:hover .post-date {
+.post-item a:hover .post-title, .post-item a:hover .post-date {
   opacity: .60;
 }
 
@@ -1156,15 +1001,13 @@ aside.sidebar {
   color: #000;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  ARCHIVE-ASIDE-WIDGET
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;  
+  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
   padding: 0 30px 40px;
   color: #3f3f3f;
 }
@@ -1258,23 +1101,19 @@ h3.aside-title {
   font-size: 1.125rem;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-
 
 /*  PAGINATION (PAGE/POST)
 /*-----------------------------------------------------------------------------------*/
 
-.paginator,
-.post-nav {
+.paginator, .post-nav {
   width: 52px;
   height: 72%;
   margin: 14% auto;
   overflow: hidden;
 }
 
-.paginator a,
-.post-nav a {
+.paginator a, .post-nav a {
   width: 22px;
   color: #656565;
   font-family: "Noto Sans SC", 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
@@ -1287,14 +1126,12 @@ h3.aside-title {
   text-overflow: ellipsis;
 }
 
-.paginator a:hover,
-.post-nav a:hover {
+.paginator a:hover, .post-nav a:hover {
   text-decoration: none;
   color: #000;
 }
 
-.prev-wrap,
-.next-wrap {
+.prev-wrap, .next-wrap {
   display: flex;
   align-items: center;
 }
@@ -1309,14 +1146,12 @@ h3.aside-title {
   justify-content: flex-end;
 }
 
-.prev-page,
-.prev-post {
+.prev-page, .prev-post {
   text-align: left;
   padding-left: 4px;
 }
 
-.next-page,
-.next-post {
+.next-page, .next-post {
   text-align: right;
   padding-right: 4px;
 }
@@ -1327,9 +1162,7 @@ h3.aside-title {
   overflow: hidden;
 }
 
-
 /*--------------------------------------------------------------------------------*/
-
 
 /*   ABOUT
 /*--------------------------------------------------------------------------------*/
@@ -1340,9 +1173,7 @@ h3.aside-title {
   font-size: 1.125rem;
 }
 
-
 /*--------------------------------------------------------------*/
-
 
 /*   FOOTER COPYRIGHT
 /*--------------------------------------------------------------*/
@@ -1384,7 +1215,21 @@ h3.aside-title {
 }
 
 #disqus_thread {
+  position: relative;
   width: 280px;
+  max-width: 280px;
+}
+
+#disqus_thread:after {
+  content: "\f127" " 评论系统因未科学上网而加载失败。";
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-family: FontAwesome, "Gen Ryu Min TW";
+  color: rgb(128,128,128);
+  padding-right: 125px;
+  height: 100%;
+  text-align: center;
 }
 
 .upright {
