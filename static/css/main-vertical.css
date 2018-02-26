@@ -585,12 +585,11 @@ blockquote {
 
 .post-entry blockquote p {
   /* border-left: 3px solid #424243; */
-  padding-top: 18px;
+  margin: 18px 10px;
   color: #999;
   font-family: 'AR PL KaitiM GB', "Georgia";
   font-size: 1.25rem;
   line-height: 2;
-  margin: 0px;
   /* font-style: italic; */
 }
 

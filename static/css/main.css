@@ -686,7 +686,8 @@ h1.prince-log a {
 }
 
 .post-entry h2 {
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  margin-top: 4rem;
 }
 
 .post-entry h3 {
