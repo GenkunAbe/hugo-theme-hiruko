@@ -535,7 +535,8 @@ h1.prince-log a {
 .post-entry p, .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6, .post-entry hr {
   margin-left: 32px;
   font-family: "Vollkorn", 'Gen Ryu Min TW', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
-  line-height: 2.2;
+  line-height: 2.3;
+  letter-spacing: 0.15rem;
 }
 
 .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 {
