@@ -169,24 +169,24 @@ a img {
 
 @font-face {
   font-family: 'Noto Serif SC';
-  src: url('../fonts/Noto-Serif-SC/SourceHanSerifCN-SemiBold.eot');
+  src: url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.eot');
   src:
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-SemiBold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-SemiBold.woff') format('woff'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-SemiBold.ttf') format('truetype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-SemiBold.svg') format('svg');
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.woff') format('woff'),
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.ttf') format('truetype'),
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Noto Serif SC';
-  src: url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Heavy.eot');
+  src: url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.eot');
   src:
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Heavy.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Heavy.woff') format('woff'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Heavy.ttf') format('truetype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Heavy.svg') format('svg');
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.woff') format('woff'),
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.ttf') format('truetype'),
+    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.svg') format('svg');
   font-weight: bold;
 }
 
