@@ -5,13 +5,13 @@
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -177,7 +177,7 @@ a img {
 body {
   font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
   color: #000;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: rgba(246, 247, 249, 1);
 }
 
@@ -536,7 +536,7 @@ h1.prince-log a {
   margin-left: 32px;
   font-family: "Vollkorn", 'Gen Ryu Min TW', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
   line-height: 2.3;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.18rem;
 }
 
 .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 {
@@ -890,7 +890,7 @@ a.article-more:hover {
 /*-----------------------------------------------------------------------------------*/
 
 .post {
-  height: 72%;
+  height: 70%;
   margin: 14% auto;
   padding-right: 100px;
 }

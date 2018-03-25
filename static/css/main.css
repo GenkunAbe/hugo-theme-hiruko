@@ -29,13 +29,13 @@ td {
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -251,7 +251,7 @@ a img {
 body {
   font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
   color: #000;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: rgba(246, 247, 249, 1);
 }
 
