@@ -450,7 +450,7 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
   margin-left: 25px;
   margin-right: 20px;
   text-align: center;
@@ -461,7 +461,7 @@ h1.prince-log a {
 }
 
 .post-title a {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
   color: #000;
 }
 
@@ -534,9 +534,9 @@ h1.prince-log a {
 
 .post-entry p, .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6, .post-entry hr {
   margin-left: 32px;
-  font-family: "Vollkorn", 'Gen Ryu Min TW', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
+  font-family: "Vollkorn", 'Gen Ryu Min TW', FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
   line-height: 2.3;
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.2rem;
 }
 
 .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 {
@@ -638,7 +638,7 @@ blockquote {
 }
 
 .post-entry ul li {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
+  font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
   margin-bottom: 8px;
   list-style: square;
 }
@@ -941,7 +941,7 @@ aside.sidebar {
 }
 
 .post-item a .post-title {
-  font-family: "Vollkorn", 'Gen Ryu Min TW', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  font-family: "Vollkorn", 'Gen Ryu Min TW', FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
   text-align: left;
   margin: 0px;
   font-weight: 400;
@@ -958,7 +958,7 @@ aside.sidebar {
     margin: 8px 0;
   }
   .post-item a .post-title {
-    font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+    font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
     height: 18px;
     line-height: 18px;
     padding-left: 0px;

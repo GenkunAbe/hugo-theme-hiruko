@@ -570,7 +570,7 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
   margin-bottom: 25px;
   margin-top: 20px;
   text-align: center;
@@ -582,7 +582,7 @@ h1.prince-log a {
 }
 
 .post-title a {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
   color: #000;
 }
 
@@ -668,7 +668,7 @@ h1.prince-log a {
 .post-entry h6,
 .post-entry hr {
   margin-bottom: 20px;
-  font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
+  font-family: "Vollkorn", 'Noto Serif SC', FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
 }
 
 .post-entry h1,
@@ -779,7 +779,7 @@ blockquote {
 }
 
 .post-entry ul li {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
+  font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
   margin-bottom: 8px;
   list-style: square;
 }
@@ -1097,7 +1097,7 @@ aside.sidebar {
 }
 
 .post-item a .post-title {
-  font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  font-family: "Vollkorn", 'Noto Serif SC', FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
   text-align: left;
   margin: 0px;
   font-weight: 400;
@@ -1114,7 +1114,7 @@ aside.sidebar {
     margin: 8px 0;
   }
   .post-item a .post-title {
-    font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+    font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
     height: 18px;
     line-height: 18px;
     padding-left: 0px;
@@ -1167,7 +1167,7 @@ aside.sidebar {
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;  
+  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
   padding: 0 30px 40px;
   color: #3f3f3f;
 }
