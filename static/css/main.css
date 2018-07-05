@@ -570,7 +570,7 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 600;
   /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
@@ -585,7 +585,7 @@ h1.prince-log a {
 }
 
 .post-title a {
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 900;
   /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
@@ -674,7 +674,7 @@ h1.prince-log a {
 .post-entry h6,
 .post-entry hr {
   margin-bottom: 20px;
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 600;
   /* font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
@@ -788,7 +788,7 @@ blockquote {
 }
 
 .post-entry ul li {
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 600;
   /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
@@ -1109,7 +1109,7 @@ aside.sidebar {
 }
 
 .post-item a .post-title {
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 900;
   /* font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
@@ -1129,7 +1129,7 @@ aside.sidebar {
     margin: 8px 0;
   }
   .post-item a .post-title {
-    font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+    font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
     font-style: normal;
     font-weight: 900;
     /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
@@ -1185,7 +1185,7 @@ aside.sidebar {
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 600;
   /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
@@ -1217,7 +1217,7 @@ h3.aside-title {
 }
 
 .about-me-text {
-  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
 	font-style: normal;
 	font-weight: 600;
   /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
