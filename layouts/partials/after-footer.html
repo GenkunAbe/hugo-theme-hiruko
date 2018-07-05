@@ -8,6 +8,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
+<script src="https://use.typekit.net/kci6xzu.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 {{ if eq .Params.vertical true }}
 <script>
     $(document).ready(function () {
@@ -67,7 +70,7 @@
         TeX: {
         extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'extpfeil.js']
         },
-        "HTML-CSS": { 
+        "HTML-CSS": {
         availableFonts: ["TeX"],
         scale: 85
         },

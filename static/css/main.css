@@ -143,7 +143,7 @@ a img {
   src: url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
   font-weight: bold;
 }
-
+/*
 @font-face {
   font-family: 'Noto Sans SC';
   src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot');
@@ -188,7 +188,7 @@ a img {
     url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.ttf') format('truetype'),
     url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.svg') format('svg');
   font-weight: bold;
-}
+} */
 
 @font-face {
   font-family: 'AR PL KaitiM GB';
@@ -570,19 +570,25 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 600;
+  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
   margin-bottom: 25px;
   margin-top: 20px;
   text-align: center;
   font-size: 1.375rem;
   letter-spacing: 1.25px;
-  font-weight: 400;
+  /* font-weight: 400; */
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .post-title a {
-  font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 900;
+  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
   color: #000;
 }
 
@@ -668,7 +674,10 @@ h1.prince-log a {
 .post-entry h6,
 .post-entry hr {
   margin-bottom: 20px;
-  font-family: "Vollkorn", 'Noto Serif SC', FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 600;
+  /* font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
 }
 
 .post-entry h1,
@@ -779,7 +788,10 @@ blockquote {
 }
 
 .post-entry ul li {
-  font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 600;
+  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
   margin-bottom: 8px;
   list-style: square;
 }
@@ -1097,10 +1109,13 @@ aside.sidebar {
 }
 
 .post-item a .post-title {
-  font-family: "Vollkorn", 'Noto Serif SC', FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 900;
+  /* font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
   text-align: left;
   margin: 0px;
-  font-weight: 400;
+  /* font-weight: 400; */
   text-transform: uppercase;
 }
 
@@ -1114,7 +1129,10 @@ aside.sidebar {
     margin: 8px 0;
   }
   .post-item a .post-title {
-    font-family: "Vollkorn", "Noto Serif SC", FangSong, STFangsong, KaiTi, STKaiti, Arial, sans-serif;
+    font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+    font-style: normal;
+    font-weight: 900;
+    /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
     height: 18px;
     line-height: 18px;
     padding-left: 0px;
@@ -1167,7 +1185,10 @@ aside.sidebar {
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 600;
+  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
   padding: 0 30px 40px;
   color: #3f3f3f;
 }
@@ -1196,7 +1217,10 @@ h3.aside-title {
 }
 
 .about-me-text {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
+  font-family: adobe-garamond-pro, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+	font-style: normal;
+	font-weight: 600;
+  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
   padding: 15px 0 0;
   font-size: 0.875rem;
   line-height: 22px;
