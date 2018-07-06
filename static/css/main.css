@@ -1,3 +1,10 @@
+:root {
+  --serif-font: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  --sans-font: Oswald, 'Microsoft YaHei', STHeiti;
+  --italic-font: 'AR PL KaitiM GB', "Georgia";
+  --mono-font: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
+}
+
 *,
 html,
 body,
@@ -79,8 +86,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 900;
   font-size: 100%;
-  font-weight: normal
 }
 
 h1 {
@@ -143,52 +150,6 @@ a img {
   src: url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
   font-weight: bold;
 }
-/*
-@font-face {
-  font-family: 'Noto Sans SC';
-  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot');
-  src:
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.woff') format('woff'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.ttf') format('truetype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Noto Sans SC';
-  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot');
-  src:
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.woff') format('woff'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.ttf') format('truetype'),
-    url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.svg') format('svg');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Noto Serif SC';
-  src: url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.eot');
-  src:
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.woff') format('woff'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.ttf') format('truetype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Medium.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Noto Serif SC';
-  src: url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.eot');
-  src:
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.woff') format('woff'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.ttf') format('truetype'),
-    url('../fonts/Noto-Serif-SC/SourceHanSerifCN-Bold.svg') format('svg');
-  font-weight: bold;
-} */
 
 @font-face {
   font-family: 'AR PL KaitiM GB';
@@ -249,7 +210,9 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-style: normal;
+  font-weight: 600;
   color: #000;
   font-size: 1rem;
   background-color: rgba(246, 247, 249, 1);
@@ -285,15 +248,6 @@ main::after {
   content: '';
   clear: both;
   display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
 }
 
 p {
@@ -460,12 +414,12 @@ pre .javascript .function {
 }
 
 h1.prince-log {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 700;
   height: 80px;
   line-height: 80px;
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 700;
   font-size: 1.25rem;
 }
 
@@ -478,7 +432,6 @@ h1.prince-log a {
   text-transform: uppercase;
   font-size: 0.625rem;
   letter-spacing: 2px;
-  font-weight: 600;
   margin-top: 12px;
   display: none;
 }
@@ -495,9 +448,9 @@ h1.prince-log a {
     position: relative;
   }
   .main-nav-items li a {
-    font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
-    font-size: 0.75rem;
+    font-family: Oswald, 'Microsoft YaHei', STHeiti;
     font-weight: 400;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     color: #808080;
     line-height: 80px;
@@ -521,17 +474,15 @@ h1.prince-log a {
     top: 60px;
   }
   .main-nav-items li a {
+    font-family: Oswald, 'Microsoft YaHei', STHeiti;
+    font-weight: 400;
+    font-size: 1rem;
     display: block;
     text-align: right;
-    font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
-    font-size: 1rem;
-    font-weight: 400;
     letter-spacing: 1px;
     color: #808080;
     padding: 8px 0;
-    /*line-height: 80px;*/
     text-transform: uppercase;
-    /*display: inline-block;*/
     -o-transition: .3s;
     -ms-transition: .3s;
     -moz-transition: .3s;
@@ -570,25 +521,17 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 600;
-  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
+  font-weight: 900;
   margin-bottom: 25px;
   margin-top: 20px;
   text-align: center;
   font-size: 1.375rem;
   letter-spacing: 1.25px;
-  /* font-weight: 400; */
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .post-title a {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 900;
-  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
   color: #000;
 }
 
@@ -597,13 +540,13 @@ h1.prince-log a {
 }
 
 .post-info {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   font-size: 0.75rem;
   color: #797979;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: .6px;
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
-  font-weight: 500;
   margin-bottom: 45px;
   margin-top: 20px;
 }
@@ -674,10 +617,6 @@ h1.prince-log a {
 .post-entry h6,
 .post-entry hr {
   margin-bottom: 20px;
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 600;
-  /* font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
 }
 
 .post-entry h1,
@@ -687,7 +626,6 @@ h1.prince-log a {
 .post-entry h5,
 .post-entry h6 {
   color: #000;
-  font-weight: 900;
 }
 
 .post-entry h1 {
@@ -788,10 +726,6 @@ blockquote {
 }
 
 .post-entry ul li {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 600;
-  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
   margin-bottom: 8px;
   list-style: square;
 }
@@ -802,7 +736,6 @@ blockquote {
 }
 
 .post-entry dt {
-  font-weight: bold;
   margin-bottom: 4px;
 }
 
@@ -833,7 +766,6 @@ blockquote {
 
 .post-entry th {
   padding: 6px 0;
-  font-weight: bold;
   font-size: 0.875rem;
   border-bottom: 2px solid #ddd;
 }
@@ -988,14 +920,14 @@ blockquote {
 }
 
 a.article-more {
-  font-family: 'Noto Sans SC';
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   font-size: 0.875rem;
   line-height: 35px;
   padding-left: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #797979;
-  font-weight: 600;
   transition: .3s;
 }
 
@@ -1025,7 +957,8 @@ a.article-more:hover {
 }
 
 .post-tags-box a {
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   color: #797979;
   line-height: 32px;
   text-transform: uppercase;
@@ -1109,13 +1042,8 @@ aside.sidebar {
 }
 
 .post-item a .post-title {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 900;
-  /* font-family: "Vollkorn", 'Noto Serif SC', "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
   text-align: left;
   margin: 0px;
-  /* font-weight: 400; */
   text-transform: uppercase;
 }
 
@@ -1129,10 +1057,6 @@ aside.sidebar {
     margin: 8px 0;
   }
   .post-item a .post-title {
-    font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-    font-style: normal;
-    font-weight: 900;
-    /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
     height: 18px;
     line-height: 18px;
     padding-left: 0px;
@@ -1166,11 +1090,12 @@ aside.sidebar {
 }
 
 .postList-tags-box a {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   font-size: 0.75rem;
   color: #797979;
   line-height: 32px;
   text-transform: uppercase;
-  font-family: "Oswald";
 }
 
 .postList-tags-box li a:hover {
@@ -1185,15 +1110,15 @@ aside.sidebar {
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 600;
-  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   padding: 0 30px 40px;
   color: #3f3f3f;
 }
 
 h3.aside-title {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   margin-top: 0;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -1204,7 +1129,6 @@ h3.aside-title {
   margin-bottom: 0;
   text-align: center;
   font-family: inherit;
-  font-weight: 500;
   line-height: 1.1;
 }
 
@@ -1217,10 +1141,6 @@ h3.aside-title {
 }
 
 .about-me-text {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-	font-style: normal;
-	font-weight: 600;
-  /* font-family: "Vollkorn", "Noto Serif SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
   padding: 15px 0 0;
   font-size: 0.875rem;
   line-height: 22px;
@@ -1234,7 +1154,8 @@ h3.aside-title {
 }
 
 .all-tags-box a {
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   font-size: 0.75rem !important;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1303,11 +1224,11 @@ h3.aside-title {
 
 .paginator a,
 .post-nav a {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   color: #656565;
-  font-family: "Noto Sans SC", 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
   text-transform: uppercase;
   font-size: 0.875rem;
-  font-weight: 500;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -1376,18 +1297,20 @@ h3.aside-title {
 /*--------------------------------------------------------------*/
 
 .copyright {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   padding: 35px 0;
   background: rgba(246, 247, 249, 1);
   overflow: hidden;
-  font-family: "Noto Sans SC", sans-serif, 'Microsoft YaHei', STHeiti;
   clear: both;
   text-align: center;
 }
 
 .copyright p {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 400;
   font-size: 0.75rem;
   color: #6b6b6b;
-  font-family: "Noto Ssns SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
 }
 
 .copyright p a {

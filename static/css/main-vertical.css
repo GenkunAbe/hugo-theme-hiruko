@@ -1,3 +1,10 @@
+:root {
+  --serif-font: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  --sans-font: Oswald, 'Microsoft YaHei', STHeiti;
+  --italic-font: 'AR PL KaitiM GB', "Georgia";
+  --mono-font: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
+}
+
 *, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
   margin: 0;
   padding: 0
@@ -102,36 +109,6 @@ a img {
 }
 
 @font-face {
-  font-family: 'Noto Sans SC';
-  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot');
-  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.eot?#font-spider') format('embedded-opentype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.woff') format('woff'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.ttf') format('truetype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Medium.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Noto Sans SC';
-  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot');
-  src: url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.eot?#font-spider') format('embedded-opentype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.woff') format('woff'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.ttf') format('truetype'), url('../fonts/Noto-Sans-SC/SourceHanSansSC-Bold.svg') format('svg');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Gen Ryu Min TW';
-  src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot');
-  src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot?#font-spider') format('embedded-opentype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff') format('woff'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.ttf') format('truetype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gen Ryu Min TW';
-  src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot');
-  src: url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.eot?#font-spider') format('embedded-opentype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff') format('woff'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.ttf') format('truetype'), url('../fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.svg') format('svg');
-  font-weight: bold;
-}
-
-@font-face {
   font-family: 'AR PL KaitiM GB';
   src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot');
   src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot?#font-spider') format('embedded-opentype'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.woff') format('woff'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.ttf') format('truetype'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.svg') format('svg');
@@ -175,7 +152,9 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
+  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  font-style: normal;
+  font-weight: 400;
   color: #000;
   font-size: 1rem;
   background-color: rgba(246, 247, 249, 1);
@@ -218,7 +197,8 @@ main::after {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
+  font-style: normal;
+  font-weight: 900;
 }
 
 p {
@@ -257,7 +237,7 @@ pre {
 }
 
 code, kbd, pre, samp {
-  font-family: monospace, monospace;
+  font-family: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
   font-size: 0.875rem;
 }
 
@@ -342,12 +322,12 @@ pre .keyword, pre .javascript .function {
 }
 
 h1.prince-log {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-weight: 700;
   height: 80px;
   line-height: 80px;
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 700;
   font-size: 1.25rem;
 }
 
@@ -377,9 +357,8 @@ h1.prince-log a {
     position: relative;
   }
   .main-nav-items li a {
-    font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
+    font-family: Oswald, 'Microsoft YaHei', STHeiti;
     font-size: 0.75rem;
-    font-weight: 400;
     letter-spacing: 1px;
     color: #808080;
     line-height: 80px;
@@ -403,11 +382,10 @@ h1.prince-log a {
     top: 60px;
   }
   .main-nav-items li a {
+    font-family: Oswald, 'Microsoft YaHei', STHeiti;
     display: block;
     text-align: right;
-    font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
     font-size: 1rem;
-    font-weight: 400;
     letter-spacing: 1px;
     color: #808080;
     padding: 8px 0;
@@ -450,18 +428,16 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
+  font-weight: 900;
   margin-left: 25px;
   margin-right: 20px;
   text-align: center;
   font-size: 1.375rem;
   letter-spacing: 1.25px;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
 .post-title a {
-  font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
   color: #000;
 }
 
@@ -470,13 +446,12 @@ h1.prince-log a {
 }
 
 .post-info {
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
   font-size: 0.75rem;
   color: #797979;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: .6px;
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
-  font-weight: 500;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -492,6 +467,7 @@ h1.prince-log a {
 }
 
 .post-entry p {
+  font-weight: 600;
   animation: 3s infinite alternate slideIn;
 }
 
@@ -534,7 +510,6 @@ h1.prince-log a {
 
 .post-entry p, .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6, .post-entry hr {
   margin-left: 32px;
-  font-family: "Vollkorn", 'Gen Ryu Min TW', FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
   line-height: 2.3;
   letter-spacing: 0.2rem;
 }
@@ -585,10 +560,10 @@ blockquote {
 }
 
 .post-entry blockquote p {
+  font-family: 'AR PL KaitiM GB', "Georgia";
   /* border-left: 3px solid #424243; */
   margin: 18px 10px;
   color: #999;
-  font-family: 'AR PL KaitiM GB', "Georgia";
   font-size: 1.25rem;
   line-height: 2;
   /* font-style: italic; */
@@ -638,7 +613,6 @@ blockquote {
 }
 
 .post-entry ul li {
-  font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, sans-serif;
   margin-bottom: 8px;
   list-style: square;
 }
@@ -828,14 +802,13 @@ blockquote {
 }
 
 a.article-more {
-  font-family: 'Noto Sans SC';
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
   font-size: 0.875rem;
   line-height: 35px;
   padding-left: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #797979;
-  font-weight: 600;
   transition: .3s;
 }
 
@@ -865,7 +838,7 @@ a.article-more:hover {
 }
 
 .post-tags-box a {
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
   color: #797979;
   line-height: 32px;
   text-transform: uppercase;
@@ -873,15 +846,6 @@ a.article-more:hover {
 
 .post-tags-box a:hover {
   color: #000;
-}
-
-/*-----------------------------------------------------------------------------------*/
-
-/*  GALLERY
-/*-----------------------------------------------------------------------------------*/
-
-.post-gallery-page p {
-  display: inline-block;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -906,203 +870,6 @@ a.article-more:hover {
 
 /*-----------------------------------------------------------------------------------*/
 
-/*  ASIDE
-/*-----------------------------------------------------------------------------------*/
-
-aside.sidebar {
-  padding-left: 15px;
-  padding-right: 5px;
-  box-sizing: border-box;
-}
-
-/*-----------------------------------------------------------------------------------*/
-
-/*  ARCHIVE-POST
-/*-----------------------------------------------------------------------------------*/
-
-.post-item>a {
-  display: block;
-}
-
-.post-item>a:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.post-item>a span {
-  display: inline-block;
-  height: 32px;
-  line-height: 32px;
-  font-size: 0.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.post-item a .post-title {
-  font-family: "Vollkorn", 'Gen Ryu Min TW', FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
-  text-align: left;
-  margin: 0px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 767px) {
-  .post-item:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  .post-item {
-    margin: 8px 0;
-  }
-  .post-item a .post-title {
-    font-family: "Vollkorn", "Gen Ryu Min TW", FangSong, STFangsong, KaiTi, STKaiti, STHeiti, Arial, sans-serif;
-    height: 18px;
-    line-height: 18px;
-    padding-left: 0px;
-  }
-  .post-item a .post-date {
-    text-align: right;
-    height: 18px;
-    line-height: 18px;
-    font-size: 0.75rem;
-    color: #808080;
-  }
-}
-
-.post-item a:hover .post-title, .post-item a:hover .post-date {
-  opacity: .60;
-}
-
-.postList-tags-box::before {
-  font-family: FontAwesome;
-  content: "\f02c";
-  margin-right: 9px;
-  color: #000;
-  font-size: 0.75rem;
-}
-
-.postList-tags-box {
-  transition: .3s;
-  color: #797979;
-  margin-bottom: 10px;
-}
-
-.postList-tags-box a {
-  font-size: 0.75rem;
-  color: #797979;
-  line-height: 32px;
-  text-transform: uppercase;
-}
-
-.postList-tags-box li a:hover {
-  color: #000;
-}
-
-/*-----------------------------------------------------------------------------------*/
-
-/*  ARCHIVE-ASIDE-WIDGET
-/*-----------------------------------------------------------------------------------*/
-
-.widget {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
-  padding: 0 30px 40px;
-  color: #3f3f3f;
-}
-
-h3.aside-title {
-  margin-top: 0;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  color: #262626;
-  text-transform: uppercase;
-  border-bottom: 1px dotted #dcdcdc;
-  font-size: 1.25rem;
-  margin-bottom: 0;
-  text-align: center;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-.about-me-image {
-  margin-top: 20px;
-  padding-top: 62.5%;
-  background-image: url('/aboutme.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.about-me-text {
-  font-family: "Vollkorn", "Gen Ryu Min TW", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
-  padding: 15px 0 0;
-  font-size: 0.875rem;
-  line-height: 22px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.all-tags-box {
-  padding-top: 20px;
-}
-
-.all-tags-box a {
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
-  font-size: 0.75rem !important;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: #f2f2f2;
-  color: #666;
-  padding: 6px 7px 6px;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  display: inline-block;
-  border-radius: 2px;
-}
-
-.all-tags-box a:hover {
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-}
-
-.follow-icons {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.follow-icons>a:hover {
-  opacity: 0.8;
-}
-
-.github-link::after {
-  font-family: FontAwesome;
-  content: "\f09b";
-  margin: 10px;
-  color: #000;
-  font-size: 1.125rem;
-}
-
-.twitter-link::after {
-  font-family: FontAwesome;
-  content: "\f099";
-  margin: 10px;
-  color: #000;
-  font-size: 1.125rem;
-}
-
-.weibo-link::after {
-  font-family: FontAwesome;
-  content: "\f18a";
-  margin: 10px;
-  color: #000;
-  font-size: 1.125rem;
-}
-
-/*-----------------------------------------------------------------------------------*/
-
 /*  PAGINATION (PAGE/POST)
 /*-----------------------------------------------------------------------------------*/
 
@@ -1116,7 +883,7 @@ h3.aside-title {
 .paginator a, .post-nav a {
   width: 22px;
   color: #656565;
-  font-family: "Noto Sans SC", 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 500;
@@ -1182,7 +949,7 @@ h3.aside-title {
   padding: 35px 35px;
   background: rgba(255, 255, 255, 1);
   overflow: hidden;
-  font-family: "Noto Sans SC", sans-serif, 'Microsoft YaHei', STHeiti;
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
   clear: both;
   text-align: center;
 }
@@ -1190,7 +957,7 @@ h3.aside-title {
 .copyright p {
   font-size: 0.75rem;
   color: #6b6b6b;
-  font-family: "Noto Sans SC", "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
+  font-family: Oswald, 'Microsoft YaHei', STHeiti;
 }
 
 .copyright p a {
@@ -1225,7 +992,7 @@ h3.aside-title {
   display: block;
   font-size: 16px;
   font-style: normal;
-  font-family: FontAwesome, "Gen Ryu Min TW";
+  font-family: FontAwesome, Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
   color: rgb(128,128,128);
   padding-right: 125px;
   height: 100%;
