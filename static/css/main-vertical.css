@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   line-height: 2;
 }
 
@@ -429,10 +429,10 @@ h1.prince-log a {
 
 .post-title {
   font-weight: 900;
-  margin-left: 25px;
+  margin-left: 30px;
   margin-right: 20px;
   text-align: center;
-  font-size: 1.375rem;
+  font-size: 1.45rem;
   letter-spacing: 1.25px;
   text-transform: uppercase;
 }
@@ -452,7 +452,7 @@ h1.prince-log a {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: .6px;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-right: 20px;
 }
 
@@ -561,6 +561,7 @@ blockquote {
 
 .post-entry blockquote p {
   font-family: 'AR PL KaitiM GB', "Georgia";
+  font-weight: 400;
   /* border-left: 3px solid #424243; */
   margin: 18px 10px;
   color: #999;
@@ -855,7 +856,7 @@ a.article-more:hover {
 
 .post {
   height: 70%;
-  margin: 14% auto;
+  margin: 13% auto;
   padding-right: 100px;
 }
 

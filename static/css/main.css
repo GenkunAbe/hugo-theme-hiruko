@@ -251,7 +251,7 @@ main::after {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.38rem;
   line-height: 2;
 }
 
@@ -525,7 +525,7 @@ h1.prince-log a {
   margin-bottom: 25px;
   margin-top: 20px;
   text-align: center;
-  font-size: 1.375rem;
+  font-size: 1.475rem;
   letter-spacing: 1.25px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -671,10 +671,11 @@ blockquote {
 
 .post-entry blockquote p {
   /* border-left: 3px solid #424243; */
+  font-size: 1.25rem;
+  font-family: 'AR PL KaitiM GB', "Georgia";
+  font-weight: 400;
   color: #999;
   padding: 0 28px;
-  font-family: 'AR PL KaitiM GB', "Georgia";
-  font-size: 1.25rem;
   line-height: 2;
   margin: 0px;
   font-style: italic;
