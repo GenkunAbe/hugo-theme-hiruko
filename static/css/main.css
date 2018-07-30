@@ -301,7 +301,7 @@ code {
   color: #4d4d4c;
   background: #FAFAFA;
   border-radius: 3px;
-  font-size: 0.9375rem;
+  font-size: 1.15rem;
 }
 
 pre code {
@@ -450,7 +450,7 @@ h1.prince-log a {
   .main-nav-items li a {
     font-family: Oswald, 'Microsoft YaHei', STHeiti;
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 1px;
     color: #808080;
     line-height: 80px;

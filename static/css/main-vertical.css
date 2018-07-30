@@ -358,7 +358,7 @@ h1.prince-log a {
   }
   .main-nav-items li a {
     font-family: Oswald, 'Microsoft YaHei', STHeiti;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 1px;
     color: #808080;
     line-height: 80px;
@@ -984,8 +984,8 @@ a.article-more:hover {
 
 #disqus_thread {
   position: relative;
-  width: 280px;
-  max-width: 280px;
+  width: 300px;
+  max-width: 300px;
   overflow: auto;
 }
 
