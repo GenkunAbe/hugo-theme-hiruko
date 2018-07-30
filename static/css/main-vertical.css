@@ -986,9 +986,10 @@ a.article-more:hover {
   position: relative;
   width: 280px;
   max-width: 280px;
+  overflow: auto;
 }
 
-#disqus_thread:after {
+/* #disqus_thread:after {
   content: "\f127" " 评论系统因未科学上网而加载失败。";
   display: block;
   font-size: 16px;
@@ -998,7 +999,7 @@ a.article-more:hover {
   padding-right: 125px;
   height: 100%;
   text-align: center;
-}
+} */
 
 .upright {
   text-orientation: sideways;
