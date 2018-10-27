@@ -1277,6 +1277,54 @@ h3.aside-title {
   overflow: hidden;
 }
 
+#toc {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  margin-left: 480px;
+  border: 0px solid #dddddd;
+  /* opacity: 0; */
+  /* -o-transition: .4s;
+  -ms-transition: .4s;
+  -moz-transition: .4s;
+  -webkit-transition: .4s; */
+}
+
+/* #toc:hover {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  margin-left: 480px;
+  border: 0px solid #dddddd;
+  opacity: 1;
+  -o-transition: .4s;
+  -ms-transition: .4s;
+  -moz-transition: .4s;
+  -webkit-transition: .4s;
+} */
+
+#toc a {
+  /* display: block; */
+  color: #cccccc;
+}
+
+#toc a:hover {
+  /* padding: 0; */
+  color: var(--main-color,#666666);
+}
+
+#toc .active a {
+  color: var(--main-color,#666666);
+}
+
+#toc ul {
+  margin-left: 1em;
+}
+
+#toc li {
+  /* display: block; */
+}
+
 
 /*--------------------------------------------------------------------------------*/
 

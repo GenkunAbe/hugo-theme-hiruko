@@ -1,3 +1,5 @@
+
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
@@ -27,7 +29,7 @@
         o.src = u;
         if (c) { o.addEventListener('load', function (e) { c(e); }); }
         s.parentNode.insertBefore(o, s);
-    })('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function () {
+    })('//cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js', function () {
         pangu.spacingPage();
     });
 </script>
@@ -80,7 +82,7 @@
         }
     });
 </script>
-<script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script async type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {{ end }}
 
 {{ if eq .Params.comments true }}
