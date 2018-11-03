@@ -176,7 +176,7 @@
             self._setEventHandlers();
 
             // Binding to the Window load event to make sure the correct scrollTop is calculated
-            $(window).on('load', function() {
+            $(window).on('load',function() {
 
                 // Sets the active TOC item
                 self._setActiveElement(true);
@@ -191,11 +191,8 @@
                     },0);
 
                 });
+
             });
-            // $(window).load(function() {
-
-
-            // });
 
         },
 

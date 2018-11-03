@@ -1,15 +1,6 @@
 (function (a) {
   "use strict";
 
-  var appendStylesheet = function (url) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = url;
-    document.body.appendChild(link);
-  };
-
-  appendStylesheet('//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css');
-
   var $ = a;
   $('.post-block p img').each(function () {
     $(this).wrap('<a data-fancybox="images" href="' + this.src + '" data-caption=" ' + this.alt + '" class="fancybox"></a>');
@@ -31,20 +22,6 @@
       },
     });
   }
-
-  // if ($.fancybox) {
-  //   $('.post-block p img')
-  //     .on('click', function () {
-  //       $.fancybox.open([{
-  //         src: this.src,
-  //         opts: {
-  //           caption: '<a href="' + this.src + '" target="_blank" download>Download</a>'
-  //         }
-  //       }]);
-  //     });
-  //   // $.fancybox.defaults.speed = 1000;
-  // }
-
 
   function b(a) {
     var c, d, b = [];

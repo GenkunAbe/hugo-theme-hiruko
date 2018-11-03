@@ -14,18 +14,27 @@
 
   <link rel="icon" href="/media/favicon.png">
 
-  <link href="/css/bootstrap.min.css", rel="stylesheet">
-  <link href="/css/font-awesome.min.css", rel="stylesheet">
-  <link href="//cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/jquery.tocify/1.9.0/stylesheets/jquery.tocify.css" rel="stylesheet">
-
+  <link href="{{ .Site.Params.BootstrapCDN }}/twitter-bootstrap/{{ .Site.Params.BootstrapVersion }}/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ .Site.Params.FontAwesomeCDN }}/font-awesome/{{ .Site.Params.FontAwesomeVersion }}/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ .Site.Params.FancyBoxCDN }}/fancybox/{{ .Site.Params.FancyBoxVersion }}/jquery.fancybox.min.css" rel="stylesheet" />
+  {{ if eq .Params.toc true }}
+  <link href="{{ .Site.Params.JQueryCDN }}/jqueryui/{{ .Site.Params.JQueryUIVersion }}/jquery-ui.min.css" rel="stylesheet">
+  <link href="{{ .Site.Params.JQueryCDN }}/jquery.tocify/{{ .Site.Params.JQueryTocifyVersion }}/stylesheets/jquery.tocify.min.css" rel="stylesheet">
+  {{ end }}
   {{ if eq .Params.vertical true }}
-  <link href="/css/main-vertical.css", rel="stylesheet">
+  <link href="/css/main-vertical.css" rel="stylesheet">
   {{ else }}
-  <link href="/css/main.css", rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+  {{ end }}
+
+  <script src="{{ .Site.Params.JQueryCDN }}/jquery/{{ .Site.Params.JQueryVersion }}/jquery.min.js"></script>
+  <script src="{{ .Site.Params.BootstrapCDN }}/twitter-bootstrap/{{ .Site.Params.BootstrapVersion }}/js/bootstrap.min.js"></script>
+  <script src="{{ .Site.Params.FancyBoxCDN }}/fancybox/{{ .Site.Params.FancyBoxVersion }}/jquery.fancybox.min.js"></script>
+  {{ if eq .Params.toc true }}
+  <script src="{{ .Site.Params.JQueryCDN }}/jqueryui/{{ .Site.Params.JQueryUIVersion }}/jquery-ui.min.js"></script>
+  <script src="{{ .Site.Params.JQueryCDN }}/jquery.tocify/{{ .Site.Params.JQueryTocifyVersion }}/javascripts/jquery.tocify.min.js"></script>
   {{ end }}
 
   {{ .Hugo.Generator }}
-
 </head>
 <body>

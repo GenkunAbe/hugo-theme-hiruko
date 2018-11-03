@@ -2,7 +2,7 @@
   --serif-font: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
   --sans-font: Oswald, 'Microsoft YaHei', STHeiti;
   --italic-font: 'AR PL KaitiM GB', "Georgia";
-  --mono-font: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
+  --mono-font: consolas, Menlo, Monaco, 'Microsoft YaHei', "PingFang SC", monospace;
 }
 
 *,
@@ -252,7 +252,7 @@ main::after {
 
 p {
   font-size: 1.38rem;
-  line-height: 2;
+  line-height: 3rem;
 }
 
 a {
@@ -837,7 +837,7 @@ blockquote {
 
 .post-entry pre,
 .post-entry code {
-  font-family: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
+  font-family: consolas, Menlo, Monaco, 'Microsoft YaHei', "PingFang SC", monospace;
 }
 
 .gutter {

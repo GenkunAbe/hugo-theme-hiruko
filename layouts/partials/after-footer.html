@@ -1,19 +1,21 @@
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 <script src="/js/script.js"></script>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<!-- <script src="https://use.typekit.net/kci6xzu.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 
-<script src="https://use.typekit.net/kci6xzu.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+    (function(d) {
+        var config = {
+        kitId: 'kci6xzu',
+        scriptTimeout: 3000,
+        async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+</script>
 
 {{ if eq .Params.vertical true }}
+<script src="{{ .Site.Params.JQueryCDN }}/jquery-mousewheel/{{ .Site.Params.JQueryMouseWheelVersion }}/jquery.mousewheel.min.js"></script>
 <script>
       $('html, body, *').mousewheel(function(e, delta) {
           this.scrollLeft += (delta * 100);
@@ -29,7 +31,7 @@
         o.src = u;
         if (c) { o.addEventListener('load', function (e) { c(e); }); }
         s.parentNode.insertBefore(o, s);
-    })('//cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js', function () {
+    })("{{ .Site.Params.PanguCDN }}/pangu/{{ .Site.Params.PanguVersion }}/pangu.min.js", function () {
         pangu.spacingPage();
     });
 </script>
@@ -82,7 +84,7 @@
         }
     });
 </script>
-<script async type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script async type="text/javascript" src="{{ .Site.Params.MathJaxCDN }}/mathjax/{{ .Site.Params.MathJaxVersion }}/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {{ end }}
 
 {{ if eq .Params.comments true }}
@@ -90,13 +92,38 @@
     var url_parts = window.location.href.split("?");
     var disqus_url = url_parts[0];
     (function () {
-        console.log("enter disqus");
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
         dsq.src = "//{{ .Site.Params.disqus }}.disqus.com/embed.js";
         (document.head || d.body).appendChild(dsq);
     })();
+</script>
+{{ end }}
+
+{{ if isset .Params "codes" }}
+<link href="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/styles/atom-one-light.min.css" rel="stylesheet" />
+<script src="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/highlight.min.js"></script>
+{{ range .Params.codes }}
+<script src="{{ $.Site.Params.HighLightCDN }}/highlight.js/{{ $.Site.Params.HighLightVersion }}/languages/{{ . }}.min.js"></script>
+{{ end }}
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+
+{{ if eq .Params.toc true }}
+<script>
+    if (typeof show_toc == 'undefined') {
+        var show_toc = true;
+    }
+    if (show_toc) {
+        $("#toc").tocify({
+            selectors: "h2,h3,h4,h5", // 选择要筛选的标题
+            extendPage: false, // 页面不够长时拉长页面，这里选择关闭因为感觉留出大片空白不好看 - -
+            highlightDefault: true, // 自动高亮第一条
+            highlightOnScroll: true,
+            scrollTo: 80,
+        });
+    }
 </script>
 {{ end }}
 
