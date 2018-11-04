@@ -838,6 +838,10 @@ blockquote {
 .post-entry pre,
 .post-entry code {
   font-family: consolas, Menlo, Monaco, 'Microsoft YaHei', "PingFang SC", monospace;
+  font-size: 1.15rem;
+  white-space: pre;
+  border: 0px;
+  border-radius: 0px;
 }
 
 .gutter {

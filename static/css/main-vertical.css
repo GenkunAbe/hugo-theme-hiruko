@@ -557,10 +557,11 @@ blockquote {
 .post-entry blockquote {
   /* background-color: #f4f4f4; */
   margin-left: 32px;
+  border-left: 0px;
 }
 
 .post-entry blockquote p {
-  font-family: 'AR PL KaitiM GB', "Georgia";
+  font-family: "AR PL KaitiM GB", "KaiTi", "Georgia";
   font-weight: 400;
   /* border-left: 3px solid #424243; */
   margin: 18px 10px;

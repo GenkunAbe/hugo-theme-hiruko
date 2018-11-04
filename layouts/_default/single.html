@@ -4,19 +4,19 @@
   {{ partial "navbar.html" . }}
   <main class="hiruko-container">
 
-    {{ if eq .Params.type "about" }}
+    {{- if eq .Params.type "about" -}}
     {{ partial "about.html" . }}
-    {{ else }}
+    {{ else -}}
     {{ partial "post.html" . }}
-    {{ end }}
+    {{ end -}}
 
-    {{ if eq .Params.toc true }}
-      {{ partial "toc.html" . }}
-    {{ end }}
+    {{ if eq .Params.toc true -}}
+    {{ partial "toc.html" . }}
+    {{ end -}}
 
-    {{ if eq .Params.vertical true }}
+    {{ if eq .Params.vertical true -}}
     {{ partial "footer.html" . }}
-    {{ end }}
+    {{ end -}}
 
   </main>
 </div>

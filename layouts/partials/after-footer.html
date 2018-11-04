@@ -1,20 +1,9 @@
 <script src="/js/script.js"></script>
+{{- if eq .Params.image true }}
+<script src="/js/fancybox.js"></script>
+{{- end }}
 
-<!-- <script src="https://use.typekit.net/kci6xzu.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
-
-<script>
-    (function(d) {
-        var config = {
-        kitId: 'kci6xzu',
-        scriptTimeout: 3000,
-        async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-</script>
-
-{{ if eq .Params.vertical true }}
+{{- if eq .Params.vertical true }}
 <script src="{{ .Site.Params.JQueryCDN }}/jquery-mousewheel/{{ .Site.Params.JQueryMouseWheelVersion }}/jquery.mousewheel.min.js"></script>
 <script>
       $('html, body, *').mousewheel(function(e, delta) {
@@ -22,72 +11,39 @@
           e.preventDefault();
       });
 </script>
-{{ end }}
+{{- end }}
 
-<script>
-    (function (u, c) {
-        var d = document, t = 'script', o = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        o.src = u;
-        if (c) { o.addEventListener('load', function (e) { c(e); }); }
-        s.parentNode.insertBefore(o, s);
-    })("{{ .Site.Params.PanguCDN }}/pangu/{{ .Site.Params.PanguVersion }}/pangu.min.js", function () {
-        pangu.spacingPage();
-    });
-</script>
-
-{{ if ne .Params.mathjax false }}
-<script>
-    (function () {
-        var i, text, code, codes = document.getElementsByTagName('code');
-        for (i = 0; i < codes.length;) {
-            code = codes[i];
-            if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-                text = code.textContent;
-                if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
-                    text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
-                    code.textContent = text;
-                }
-                if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-                    /^\$(.|\s)+\$$/.test(text) ||
-                    /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-                    code.outerHTML = code.innerHTML;  // remove <code></code>
-                    continue;
-                }
-            }
-            i++;
-        }
-    })();
-</script>
+{{- if ne .Params.mathjax false }}
+<script src="/js/mathjax.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         extensions: ['tex2jax.js'],
         jax: ["input/TeX", "output/HTML-CSS"],
         tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
         },
         TeX: {
-        extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'extpfeil.js']
+            extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'extpfeil.js']
         },
         "HTML-CSS": {
-        availableFonts: ["TeX"],
-        scale: 85
+            availableFonts: ["TeX"],
+            scale: 85
         },
         CommonHTML: {
-        scale: 85
+            scale: 85
         },
         SVG: {
-        scale: 85
+            scale: 85
         }
     });
 </script>
 <script async type="text/javascript" src="{{ .Site.Params.MathJaxCDN }}/mathjax/{{ .Site.Params.MathJaxVersion }}/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-{{ end }}
+{{- end }}
 
-{{ if eq .Params.comments true }}
+{{- if eq .Params.comments true }}
 <script>
     var url_parts = window.location.href.split("?");
     var disqus_url = url_parts[0];
@@ -99,18 +55,18 @@
         (document.head || d.body).appendChild(dsq);
     })();
 </script>
-{{ end }}
+{{- end }}
 
-{{ if isset .Params "codes" }}
-<link href="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/styles/atom-one-light.min.css" rel="stylesheet" />
+{{- if isset .Params "codes" }}
+<link rel="stylesheet" href="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/styles/atom-one-light.min.css"/>
 <script src="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/highlight.min.js"></script>
-{{ range .Params.codes }}
+{{- range .Params.codes }}
 <script src="{{ $.Site.Params.HighLightCDN }}/highlight.js/{{ $.Site.Params.HighLightVersion }}/languages/{{ . }}.min.js"></script>
-{{ end }}
+{{- end }}
 <script>hljs.initHighlightingOnLoad();</script>
-{{ end }}
+{{- end }}
 
-{{ if eq .Params.toc true }}
+{{- if eq .Params.toc true }}
 <script>
     if (typeof show_toc == 'undefined') {
         var show_toc = true;
@@ -125,7 +81,6 @@
         });
     }
 </script>
-{{ end }}
-
+{{- end }}
 </body>
 </html>
