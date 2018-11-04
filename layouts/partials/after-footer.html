@@ -1,7 +1,20 @@
-<script src="/js/script.js"></script>
+<script src="/js/scripts.js"></script>
 {{- if eq .Params.image true }}
 <script src="/js/fancybox.js"></script>
 {{- end }}
+
+<script>
+// Pangu
+(function (u, c) {
+    var d = document, t = 'script', o = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(e); }); }
+    s.parentNode.insertBefore(o, s);
+})("{{ .Site.Params.PanguCDN }}/pangu/{{ .Site.Params.PanguVersion }}/pangu.min.js", function () {
+    pangu.spacingPage();
+});
+</script>
 
 {{- if eq .Params.vertical true }}
 <script src="{{ .Site.Params.JQueryCDN }}/jquery-mousewheel/{{ .Site.Params.JQueryMouseWheelVersion }}/jquery.mousewheel.min.js"></script>

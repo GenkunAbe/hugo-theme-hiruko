@@ -472,8 +472,8 @@ h1.prince-log a {
 }
 
 .post-entry a {
-  padding: 0 2px;
-  border-bottom: 1px solid #333;
+  padding: 2px 2px 2px 2px;
+  border-left: 1px solid #333;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
@@ -483,7 +483,7 @@ h1.prince-log a {
 
 .post-entry a:hover {
   background-color: #444;
-  border: none;
+  border-left: 1px solid #fff;;
   color: #fff;
   text-decoration: none;
 }
