@@ -73,10 +73,14 @@
 {{- if isset .Params "codes" }}
 <link rel="stylesheet" href="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/styles/atom-one-light.min.css"/>
 <script src="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/highlight.min.js"></script>
+<script src="{{ .Site.Params.HighLightCDN }}/highlightjs-line-numbers.js/{{ .Site.Params.HighLightNumVersion }}/highlightjs-line-numbers.min.js"></script>
 {{- range .Params.codes }}
 <script src="{{ $.Site.Params.HighLightCDN }}/highlight.js/{{ $.Site.Params.HighLightVersion }}/languages/{{ . }}.min.js"></script>
 {{- end }}
 <script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad({
+    singleLine: true
+});</script>
 {{- end }}
 
 {{- if eq .Params.toc true }}

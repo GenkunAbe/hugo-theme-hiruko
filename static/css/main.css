@@ -133,10 +133,7 @@ a img {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  FONT-IMPORT
-
 /*-----------------------------------------------------------------------------------*/
 
 
@@ -187,10 +184,7 @@ a img {
 }
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  BOOTSTRAP
-
 /*-----------------------------------------------------------------------------------*/
 
 .icon-bar {
@@ -204,8 +198,6 @@ a img {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  2. BASE CSS
 /*-----------------------------------------------------------------------------------*/
 
@@ -283,114 +275,7 @@ acronym {
   border-bottom: 1px dotted #333;
 }
 
-pre {
-  overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 0.875rem;
-}
-
-code {
-  padding: 2px 4px;
-  word-wrap: break-word;
-  color: #4d4d4c;
-  background: #FAFAFA;
-  border-radius: 3px;
-  font-size: 1.15rem;
-}
-
-pre code {
-  padding: 0;
-  color: #4d4d4c;
-  background: none;
-  text-shadow: none;
-}
-
-pre .deletion {
-  background: #fdd;
-}
-
-pre .addition {
-  background: #dfd;
-}
-
-pre .meta {
-  color: #8959a8;
-}
-
-pre .comment {
-  color: #8e908c;
-}
-
-pre .variable,
-pre .attribute,
-pre .tag,
-pre .regexp,
-pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .css .class,
-pre .css .pseudo {
-  color: #c82829;
-}
-
-pre .number,
-pre .preprocessor,
-pre .built_in,
-pre .literal,
-pre .params,
-pre .constant,
-pre .command {
-  color: #f5871f;
-}
-
-pre .ruby .class .title,
-pre .css .rules .attribute,
-pre .string,
-pre .value,
-pre .inheritance,
-pre .header,
-pre .ruby .symbol,
-pre .xml .cdata,
-pre .special,
-pre .number,
-pre .formula {
-  color: #718c00;
-}
-
-pre .title,
-pre .css .hexcolor {
-  color: #3e999f;
-}
-
-pre .function,
-pre .python .decorator,
-pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
-pre .perl .sub,
-pre .javascript .title,
-pre .coffeescript .title {
-  color: #4271ae;
-}
-
-pre .keyword,
-pre .javascript .function {
-  color: #8959a8;
-}
-
-
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  3. NAVIGATION
 /*-----------------------------------------------------------------------------------*/
 
@@ -497,8 +382,6 @@ h1.prince-log a {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  6. POST LAYOUT
 /*-----------------------------------------------------------------------------------*/
 
@@ -616,6 +499,11 @@ a.vglnk, a.vglnk::after, a.vglnk:hover, a.vglnk:hover::after {
   border: none;
 }
 
+a.fancybox, a.fancybox::after, a.fancybox:hover, a.fancybox:hover::after {
+  text-decoration: none;
+  border: none;
+}
+
 .post-entry .fancybox {
   display: inline-block;
   border: none !important;
@@ -693,17 +581,11 @@ a.vglnk, a.vglnk::after, a.vglnk:hover, a.vglnk:hover::after {
   clear: both;
 }
 
-blockquote {
-  /* background-color: #F9F9F9; */
-}
-
 .post-entry blockquote {
-  /* background-color: #f4f4f4; */
   margin-bottom: 20px;
 }
 
 .post-entry blockquote p {
-  /* border-left: 3px solid #424243; */
   font-size: 1.25rem;
   font-family: 'AR PL KaitiM GB', "Georgia";
   font-weight: 400;
@@ -804,68 +686,9 @@ blockquote {
   border-bottom: 2px solid #ddd;
 }
 
-.post-entry .highlight figcaption {
-  font-size: 0.75rem;
-  color: #999;
-}
-
-.post-entry .highlight figcaption a {
-  float: right;
-  margin-right: 10px;
-}
-
-.post-entry .highlight {
-  margin-bottom: 30px;
-}
-
-.post-entry table.js-file-line-container {
-  margin-bottom: 0px;
-}
-
-.post-entry pre,
-.post-entry .highlight {
-  overflow: auto;
-  padding: 0;
-  font-size: 0.8125rem;
-  background: #FAFAFA !important;
-  line-height: 1.6;
-}
-
-.highlight pre {
-  border: none;
-  margin: 0 0 0 10px;
-  padding: 10px 0;
-}
-
-.highlight div {
-  background: #FAFAFA !important;
-}
-
-.highlight table {
-  margin: 0;
-  width: auto;
-  border: none;
-}
-
-.highlight td {
-  border: none;
-  padding: 0;
-}
-
 .post-entry pre {
-  font-size: 0.8125rem;
-  background: #FAFAFA;
-  line-height: 1.6;
-  padding: 12px;
-  overflow: auto;
-  white-space: pre;
-  word-wrap: normal;
   margin-bottom: 30px;
-}
-
-.post-entry pre .line {
-  white-space: pre;
-  height: 20px;
+  background: #fafafa;
 }
 
 .post-entry pre,
@@ -875,6 +698,47 @@ blockquote {
   white-space: pre;
   border: 0px;
   border-radius: 0px;
+}
+
+.post-entry code {
+  margin: 8px 4px;
+}
+
+.post-entry p code {
+  padding: 4px 6px;
+  margin: 0px;
+  color: #383a42;
+  background-color: #fafafa;
+}
+
+table.hljs-ln {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+}
+
+table.hljs-ln td.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #CCC;
+  border-bottom: none;
+  vertical-align: top;
+  padding-right: 5px;
+  width: 20px;
+  min-width: 20px;
+
+}
+
+table.hljs-ln td.hljs-ln-code {
+  padding-left: 12px;
+  border: none;
 }
 
 .gutter {
@@ -889,12 +753,6 @@ blockquote {
   color: #869194;
   text-align: center;
   background-color: #eff2f3;
-}
-
-.code pre {
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #FAFAFA;
 }
 
 .post-entry .gist .gist-file {
@@ -1008,8 +866,6 @@ a.article-more:hover {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  GALLERY
 /*-----------------------------------------------------------------------------------*/
 
@@ -1019,8 +875,6 @@ a.article-more:hover {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  POST
 /*-----------------------------------------------------------------------------------*/
 
@@ -1029,7 +883,7 @@ a.article-more:hover {
   margin: 0 auto;
 }
 
-
+/*-----------------------------------------------------------------------------------*/
 /*  ARCHIVE
 /*-----------------------------------------------------------------------------------*/
 
@@ -1041,8 +895,6 @@ a.article-more:hover {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  ASIDE
 /*-----------------------------------------------------------------------------------*/
 
@@ -1054,8 +906,6 @@ aside.sidebar {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  ARCHIVE-POST
 /*-----------------------------------------------------------------------------------*/
 
@@ -1142,8 +992,6 @@ aside.sidebar {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  ARCHIVE-ASIDE-WIDGET
 /*-----------------------------------------------------------------------------------*/
 
@@ -1247,8 +1095,6 @@ h3.aside-title {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  PAGINATION (PAGE/POST)
 /*-----------------------------------------------------------------------------------*/
 
@@ -1364,8 +1210,6 @@ h3.aside-title {
 
 
 /*--------------------------------------------------------------------------------*/
-
-
 /*   ABOUT
 /*--------------------------------------------------------------------------------*/
 
@@ -1377,8 +1221,6 @@ h3.aside-title {
 
 
 /*--------------------------------------------------------------*/
-
-
 /*   FOOTER COPYRIGHT
 /*--------------------------------------------------------------*/
 
