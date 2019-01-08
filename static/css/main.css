@@ -72,7 +72,7 @@ strong,
 th,
 var {
   font-style: normal;
-  font-weight: normal
+  font-weight: 400
 }
 
 caption,
@@ -120,7 +120,7 @@ q:after {
 }
 
 strong {
-  font-weight: bold
+  font-weight: 900
 }
 
 em {
@@ -160,29 +160,6 @@ a img {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Vollkorn';
-  src: url('../fonts/Vollkorn/Vollkorn-Semibold.eot');
-  src:
-    url('../fonts/Vollkorn/Vollkorn-Semibold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Vollkorn/Vollkorn-Semibold.woff') format('woff'),
-    url('../fonts/Vollkorn/Vollkorn-Semibold.ttf') format('truetype'),
-    url('../fonts/Vollkorn/Vollkorn-Semibold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vollkorn';
-  src: url('../fonts/Vollkorn/Vollkorn-Bold.eot');
-  src:
-    url('../fonts/Vollkorn/Vollkorn-Bold.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/Vollkorn/Vollkorn-Bold.woff') format('woff'),
-    url('../fonts/Vollkorn/Vollkorn-Bold.ttf') format('truetype'),
-    url('../fonts/Vollkorn/Vollkorn-Bold.svg') format('svg');
-  font-weight: bold;
-}
-
 /*-----------------------------------------------------------------------------------*/
 /*  BOOTSTRAP
 /*-----------------------------------------------------------------------------------*/
@@ -202,9 +179,9 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: 'adobe-garamond-pro', 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   color: #000;
   font-size: 1rem;
   background-color: rgba(246, 247, 249, 1);
@@ -300,7 +277,7 @@ acronym {
 
 h1.prince-log {
   font-family: Oswald, 'Microsoft YaHei', STHeiti;
-  font-weight: 700;
+  font-weight: 600;
   height: 80px;
   line-height: 80px;
   text-transform: uppercase;
@@ -447,6 +424,11 @@ h1.prince-log a {
 .post-entry p {
   margin-bottom: 20px;
   animation: 3s infinite alternate slideIn;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .post-entry a {
@@ -467,7 +449,7 @@ h1.prince-log a {
   height: 0;
   left: 0;
   right: 0;
-  bottom: 3px;
+  bottom: 0px;
   border-bottom: 1px solid #000;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;

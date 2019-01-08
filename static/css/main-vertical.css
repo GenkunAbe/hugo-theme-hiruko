@@ -39,7 +39,7 @@ fieldset, img {
 
 address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
-  font-weight: normal
+  /* font-weight: normal */
 }
 
 caption, th {
@@ -48,7 +48,7 @@ caption, th {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-  font-weight: normal
+  font-weight: 900;
 }
 
 h1 {
@@ -116,21 +116,6 @@ a img {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Vollkorn';
-  src: url('../fonts/Vollkorn/Vollkorn-Semibold.eot');
-  src: url('../fonts/Vollkorn/Vollkorn-Semibold.eot?#font-spider') format('embedded-opentype'), url('../fonts/Vollkorn/Vollkorn-Semibold.woff') format('woff'), url('../fonts/Vollkorn/Vollkorn-Semibold.ttf') format('truetype'), url('../fonts/Vollkorn/Vollkorn-Semibold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vollkorn';
-  src: url('../fonts/Vollkorn/Vollkorn-Bold.eot');
-  src: url('../fonts/Vollkorn/Vollkorn-Bold.eot?#font-spider') format('embedded-opentype'), url('../fonts/Vollkorn/Vollkorn-Bold.woff') format('woff'), url('../fonts/Vollkorn/Vollkorn-Bold.ttf') format('truetype'), url('../fonts/Vollkorn/Vollkorn-Bold.svg') format('svg');
-  font-weight: bold;
-}
-
 /*-----------------------------------------------------------------------------------*/
 
 /*  BOOTSTRAP
@@ -152,7 +137,7 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  font-family: 'adobe-garamond-pro', 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
   font-style: normal;
   font-weight: 400;
   color: #000;
@@ -323,7 +308,7 @@ pre .keyword, pre .javascript .function {
 
 h1.prince-log {
   font-family: Oswald, 'Microsoft YaHei', STHeiti;
-  font-weight: 700;
+  font-weight: 600;
   height: 80px;
   line-height: 80px;
   text-transform: uppercase;
@@ -467,12 +452,12 @@ h1.prince-log a {
 }
 
 .post-entry p {
-  font-weight: 600;
+  /* font-weight: 600; */
   animation: 3s infinite alternate slideIn;
 }
 
 .post-entry a {
-  padding: 2px 2px 2px 2px;
+  padding: 2px 4px 2px 2px;
   border-left: 1px solid #333;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -509,14 +494,14 @@ h1.prince-log a {
 }
 
 .post-entry p, .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6, .post-entry hr {
-  margin-left: 32px;
-  line-height: 2.3;
-  letter-spacing: 0.2rem;
+  margin-left: 1em;
+  line-height: 2.2em;
+  letter-spacing: 0.2em;
 }
 
 .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 {
   color: #000;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .post-entry h1 {
@@ -625,7 +610,7 @@ blockquote {
 }
 
 .post-entry dt {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 4px;
 }
 
@@ -656,7 +641,7 @@ blockquote {
 
 .post-entry th {
   padding: 6px 0;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.875rem;
   border-bottom: 2px solid #ddd;
 }
@@ -888,7 +873,7 @@ a.article-more:hover {
   font-family: Oswald, 'Microsoft YaHei', STHeiti;
   text-transform: uppercase;
   font-size: 0.875rem;
-  font-weight: 500;
+  /* font-weight: 400; */
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
