@@ -1,9 +1,14 @@
+@import url('https://fonts.proxy.ustclug.org/css?family=Oswald:400,600');
+@import url('https://fonts.proxy.ustclug.org/css?family=Noto+Serif+SC:400,600,900&subset=chinese-simplified');
+@import url('https://fonts.proxy.ustclug.org/css?family=EB+Garamond:400,500,600,700,800');
+
 :root {
-  --serif-font: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
-  --sans-font: Oswald, 'Microsoft YaHei', STHeiti;
-  --italic-font: 'AR PL KaitiM GB', "Georgia";
+  --serif-font: 'EB Garamond', 'Noto Serif SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  --sans-font: Oswald, 'Microsoft YaHei', STHeiti, sans-serif;
+  --italic-font: STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, "Georgia";
   --mono-font: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
 }
+
 
 *, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
   margin: 0;
@@ -93,31 +98,6 @@ a img {
 
 /*-----------------------------------------------------------------------------------*/
 
-/*  FONT-IMPORT
-
-/*-----------------------------------------------------------------------------------*/
-
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'AR PL KaitiM GB';
-  src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot');
-  src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot?#font-spider') format('embedded-opentype'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.woff') format('woff'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.ttf') format('truetype'), url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*-----------------------------------------------------------------------------------*/
-
 /*  BOOTSTRAP
 
 /*-----------------------------------------------------------------------------------*/
@@ -137,7 +117,7 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: 'adobe-garamond-pro', 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  font-family: var(--serif-font);
   font-style: normal;
   font-weight: 400;
   color: #000;
@@ -222,7 +202,7 @@ pre {
 }
 
 code, kbd, pre, samp {
-  font-family: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
+  font-family: var(--mono-font);
   font-size: 0.875rem;
 }
 
@@ -307,7 +287,7 @@ pre .keyword, pre .javascript .function {
 }
 
 h1.prince-log {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 600;
   height: 80px;
   line-height: 80px;
@@ -342,7 +322,7 @@ h1.prince-log a {
     position: relative;
   }
   .main-nav-items li a {
-    font-family: Oswald, 'Microsoft YaHei', STHeiti;
+    font-family: var(--sans-font);
     font-size: 0.85rem;
     letter-spacing: 1px;
     color: #808080;
@@ -367,7 +347,7 @@ h1.prince-log a {
     top: 60px;
   }
   .main-nav-items li a {
-    font-family: Oswald, 'Microsoft YaHei', STHeiti;
+    font-family: var(--sans-font);
     display: block;
     text-align: right;
     font-size: 1rem;
@@ -431,7 +411,7 @@ h1.prince-log a {
 }
 
 .post-info {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-size: 0.75rem;
   color: #797979;
   text-transform: uppercase;
@@ -546,7 +526,7 @@ blockquote {
 }
 
 .post-entry blockquote p {
-  font-family: "AR PL KaitiM GB", "KaiTi", "Georgia";
+  font-family: var(--italic-font);
   font-weight: 400;
   /* border-left: 3px solid #424243; */
   margin: 18px 10px;
@@ -707,7 +687,7 @@ blockquote {
 }
 
 .post-entry pre, .post-entry code {
-  font-family: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
+  font-family: var(--mono-font);
 }
 
 .gutter {
@@ -789,7 +769,7 @@ blockquote {
 }
 
 a.article-more {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-size: 0.875rem;
   line-height: 35px;
   padding-left: 10px;
@@ -825,7 +805,7 @@ a.article-more:hover {
 }
 
 .post-tags-box a {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   color: #797979;
   line-height: 32px;
   text-transform: uppercase;
@@ -870,7 +850,7 @@ a.article-more:hover {
 .paginator a, .post-nav a {
   width: 22px;
   color: #656565;
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   text-transform: uppercase;
   font-size: 0.875rem;
   /* font-weight: 400; */
@@ -936,7 +916,7 @@ a.article-more:hover {
   padding: 35px 35px;
   background: rgba(255, 255, 255, 1);
   overflow: hidden;
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   clear: both;
   text-align: center;
 }
@@ -944,7 +924,7 @@ a.article-more:hover {
 .copyright p {
   font-size: 0.75rem;
   color: #6b6b6b;
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
 }
 
 .copyright p a {
@@ -980,7 +960,7 @@ a.article-more:hover {
   display: block;
   font-size: 16px;
   font-style: normal;
-  font-family: FontAwesome, Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  font-family: FontAwesome, Vollkorn, 'Noto Serif SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
   color: rgb(128,128,128);
   padding-right: 125px;
   height: 100%;

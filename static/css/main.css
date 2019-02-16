@@ -1,8 +1,12 @@
+@import url('https://fonts.proxy.ustclug.org/css?family=Oswald:400,600');
+@import url('https://fonts.proxy.ustclug.org/css?family=Noto+Serif+SC:400,600,900&subset=chinese-simplified');
+@import url('https://fonts.proxy.ustclug.org/css?family=EB+Garamond:400,500,600,700,800');
+
 :root {
-  --serif-font: Vollkorn, 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
-  --sans-font: Oswald, 'Microsoft YaHei', STHeiti;
-  --italic-font: 'AR PL KaitiM GB', "Georgia";
-  --mono-font: consolas, Menlo, Monaco, 'Microsoft YaHei', "PingFang SC", monospace;
+  --serif-font: 'EB Garamond', 'Noto Serif SC', 'Source Han Serif SC', source-han-serif-sc, FangSong, STFangsong, KaiTi, STKaiti, serif;
+  --sans-font: Oswald, 'Microsoft YaHei', STHeiti, sans-serif;
+  --italic-font: STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, "Georgia";
+  --mono-font: consolas, Menlo, Monaco, "Georgia", "PingFang SC", monospace;
 }
 
 *,
@@ -131,35 +135,6 @@ a img {
   border: none
 }
 
-
-/*-----------------------------------------------------------------------------------*/
-/*  FONT-IMPORT
-/*-----------------------------------------------------------------------------------*/
-
-
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'AR PL KaitiM GB';
-  src: url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot');
-  src:
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.woff') format('woff'),
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.ttf') format('truetype'),
-    url('../fonts/AR-PL-KaitiM-GB/AR-PL-KaitiM-GB.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*-----------------------------------------------------------------------------------*/
 /*  BOOTSTRAP
 /*-----------------------------------------------------------------------------------*/
@@ -179,7 +154,7 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: 'adobe-garamond-pro', 'Noto Serif CJK SC', 'Source Han Serif SC', source-han-serif-sc, serif;
+  font-family: var(--serif-font);
   font-style: normal;
   font-weight: 400;
   color: #000;
@@ -276,7 +251,7 @@ acronym {
 }
 
 h1.prince-log {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 600;
   height: 80px;
   line-height: 80px;
@@ -310,7 +285,7 @@ h1.prince-log a {
     position: relative;
   }
   .main-nav-items li a {
-    font-family: Oswald, 'Microsoft YaHei', STHeiti;
+    font-family: var(--sans-font);
     font-weight: 400;
     font-size: 0.85rem;
     letter-spacing: 1px;
@@ -336,7 +311,7 @@ h1.prince-log a {
     top: 60px;
   }
   .main-nav-items li a {
-    font-family: Oswald, 'Microsoft YaHei', STHeiti;
+    font-family: var(--sans-font);
     font-weight: 400;
     font-size: 1rem;
     display: block;
@@ -400,7 +375,7 @@ h1.prince-log a {
 }
 
 .post-info {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   font-size: 0.75rem;
   color: #797979;
@@ -569,7 +544,7 @@ a.fancybox, a.fancybox::after, a.fancybox:hover, a.fancybox:hover::after {
 
 .post-entry blockquote p {
   font-size: 1.25rem;
-  font-family: 'AR PL KaitiM GB', "Georgia";
+  font-family: var(--italic-font);
   font-weight: 400;
   color: #999;
   padding: 0 28px;
@@ -675,7 +650,7 @@ a.fancybox, a.fancybox::after, a.fancybox:hover, a.fancybox:hover::after {
 
 .post-entry pre,
 .post-entry code {
-  font-family: consolas, Menlo, Monaco, 'Microsoft YaHei', "PingFang SC", monospace;
+  font-family: var(--mono-font);
   font-size: 1.15rem;
   white-space: pre;
   border: 0px;
@@ -798,7 +773,7 @@ table.hljs-ln td.hljs-ln-code {
 }
 
 a.article-more {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 35px;
@@ -835,7 +810,7 @@ a.article-more:hover {
 }
 
 .post-tags-box a {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   color: #797979;
   line-height: 32px;
@@ -960,7 +935,7 @@ aside.sidebar {
 }
 
 .postList-tags-box a {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   font-size: 0.75rem;
   color: #797979;
@@ -978,14 +953,14 @@ aside.sidebar {
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   padding: 0 30px 40px;
   color: #3f3f3f;
 }
 
 h3.aside-title {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   margin-top: 0;
   padding-top: 20px;
@@ -1022,7 +997,7 @@ h3.aside-title {
 }
 
 .all-tags-box a {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   font-size: 0.75rem !important;
   letter-spacing: 1px;
@@ -1090,7 +1065,7 @@ h3.aside-title {
 
 .paginator a,
 .post-nav a {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   color: #656565;
   text-transform: uppercase;
@@ -1207,7 +1182,7 @@ h3.aside-title {
 /*--------------------------------------------------------------*/
 
 .copyright {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   padding: 35px 0;
   background: rgba(246, 247, 249, 1);
@@ -1217,7 +1192,7 @@ h3.aside-title {
 }
 
 .copyright p {
-  font-family: Oswald, 'Microsoft YaHei', STHeiti;
+  font-family: var(--sans-font);
   font-weight: 400;
   font-size: 0.75rem;
   color: #6b6b6b;
