@@ -11,13 +11,13 @@
     o.src = u;
     if (c) { o.addEventListener('load', function (e) { c(e); }); }
     s.parentNode.insertBefore(o, s);
-})("{{ .Site.Params.PanguCDN }}/pangu/{{ .Site.Params.PanguVersion }}/pangu.min.js", function () {
+})("{{ $.Site.Params.CDN.Pangu.Path }}/pangu/{{ $.Site.Params.CDN.Pangu.Version }}/pangu.min.js", function () {
     pangu.spacingPage();
 });
 </script>
 
 {{- if eq .Params.vertical true }}
-<script src="{{ .Site.Params.JQueryCDN }}/jquery-mousewheel/{{ .Site.Params.JQueryMouseWheelVersion }}/jquery.mousewheel.min.js"></script>
+<script src="{{ $.Site.Params.CDN.JQueryMouseWheel.Path }}/jquery-mousewheel/{{ $.Site.Params.CDN.JQueryMouseWheel.Version }}/jquery.mousewheel.min.js"></script>
 <script>
       $('html, body, *').mousewheel(function(e, delta) {
           this.scrollLeft += (delta * 100);
@@ -53,7 +53,7 @@
         }
     });
 </script>
-<script async type="text/javascript" src="{{ .Site.Params.MathJaxCDN }}/mathjax/{{ .Site.Params.MathJaxVersion }}/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script async type="text/javascript" src="{{ $.Site.Params.CDN.MathJax.Path }}/mathjax/{{ $.Site.Params.CDN.MathJax.Version }}/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {{- end }}
 
 {{- if eq .Params.comments true }}
@@ -71,11 +71,11 @@
 {{- end }}
 
 {{- if isset .Params "codes" }}
-<link rel="stylesheet" href="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/styles/atom-one-light.min.css"/>
-<script src="{{ .Site.Params.HighLightCDN }}/highlight.js/{{ .Site.Params.HighLightVersion }}/highlight.min.js"></script>
-<script src="{{ .Site.Params.HighLightCDN }}/highlightjs-line-numbers.js/{{ .Site.Params.HighLightNumVersion }}/highlightjs-line-numbers.min.js"></script>
+<link rel="stylesheet" href="{{ $.Site.Params.CDN.HighLight.Path }}/highlight.js/{{ $.Site.Params.CDN.HighLight.Version }}/styles/atom-one-light.min.css"/>
+<script src="{{ $.Site.Params.CDN.HighLight.Path }}/highlight.js/{{ $.Site.Params.CDN.HighLight.Version }}/highlight.min.js"></script>
+<script src="{{ $.Site.Params.CDN.HighLightNum.Path }}/highlightjs-line-numbers.js/{{ $.Site.Params.CDN.HighLightNum.Version }}/highlightjs-line-numbers.min.js"></script>
 {{- range .Params.codes }}
-<script src="{{ $.Site.Params.HighLightCDN }}/highlight.js/{{ $.Site.Params.HighLightVersion }}/languages/{{ . }}.min.js"></script>
+<script src="{{ $.Site.Params.CDN.HighLight.Path }}/highlight.js/{{ $.Site.Params.CDN.HighLight.Version }}/languages/{{ . }}.min.js"></script>
 {{- end }}
 <script>hljs.initHighlightingOnLoad();</script>
 <script>hljs.initLineNumbersOnLoad({

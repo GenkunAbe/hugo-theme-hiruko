@@ -13,14 +13,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#e0e0e0">
 
   <link rel="icon" href="/media/favicon.png">
-  <link rel="stylesheet" href="{{ .Site.Params.BootstrapCDN }}/twitter-bootstrap/{{ .Site.Params.BootstrapVersion }}/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ .Site.Params.FontAwesomeCDN }}/font-awesome/{{ .Site.Params.FontAwesomeVersion }}/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ $.Site.Params.CDN.Bootstrap.Path }}/twitter-bootstrap/{{ $.Site.Params.CDN.Bootstrap.Version }}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ $.Site.Params.CDN.FontAwesome.Path }}/font-awesome/{{ $.Site.Params.CDN.FontAwesome.Version }}/css/font-awesome.min.css">
   {{- if eq .Params.image true }}
-  <link rel="stylesheet" href="{{ .Site.Params.FancyBoxCDN }}/fancybox/{{ .Site.Params.FancyBoxVersion }}/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="{{ $.Site.Params.CDN.FancyBox.Path }}/fancybox/{{ $.Site.Params.CDN.FancyBox.Version }}/jquery.fancybox.min.css" />
   {{- end }}
   {{- if eq .Params.toc true }}
-  <link rel="stylesheet" href="{{ .Site.Params.JQueryCDN }}/jqueryui/{{ .Site.Params.JQueryUIVersion }}/jquery-ui.min.css">
-  <link rel="stylesheet" href="{{ .Site.Params.JQueryCDN }}/jquery.tocify/{{ .Site.Params.JQueryTocifyVersion }}/stylesheets/jquery.tocify.min.css">
+  <link rel="stylesheet" href="{{ $.Site.Params.CDN.JQueryUI.Path }}/jqueryui/{{ $.Site.Params.CDN.JQueryUI.Version }}/jquery-ui.min.css">
+  <link rel="stylesheet" href="{{ $.Site.Params.CDN.JQueryTocify.Path }}/jquery.tocify/{{ $.Site.Params.CDN.JQueryTocify.Version }}/stylesheets/jquery.tocify.min.css">
   {{- end }}
   {{- if eq .Params.vertical true }}
   <link rel="stylesheet" href="/css/main-vertical.css">
@@ -28,14 +28,14 @@
   <link rel="stylesheet" href="/css/main.css">
   {{- end }}
 
-  <script src="{{ .Site.Params.JQueryCDN }}/jquery/{{ .Site.Params.JQueryVersion }}/jquery.min.js"></script>
-  <script src="{{ .Site.Params.BootstrapCDN }}/twitter-bootstrap/{{ .Site.Params.BootstrapVersion }}/js/bootstrap.min.js"></script>
+  <script src="{{ $.Site.Params.CDN.JQuery.Path }}/jquery/{{ $.Site.Params.CDN.JQuery.Version }}/jquery.min.js"></script>
+  <script src="{{ $.Site.Params.CDN.Bootstrap.Path }}/twitter-bootstrap/{{ $.Site.Params.CDN.Bootstrap.Version }}/js/bootstrap.min.js"></script>
   {{- if eq .Params.image true }}
-  <script src="{{ .Site.Params.FancyBoxCDN }}/fancybox/{{ .Site.Params.FancyBoxVersion }}/jquery.fancybox.min.js"></script>
+  <script src="{{ $.Site.Params.CDN.FancyBox.Path }}/fancybox/{{ $.Site.Params.CDN.FancyBox.Version }}/jquery.fancybox.min.js"></script>
   {{- end }}
   {{- if eq .Params.toc true }}
-  <script src="{{ .Site.Params.JQueryCDN }}/jqueryui/{{ .Site.Params.JQueryUIVersion }}/jquery-ui.min.js"></script>
-  <script src="{{ .Site.Params.JQueryCDN }}/jquery.tocify/{{ .Site.Params.JQueryTocifyVersion }}/javascripts/jquery.tocify.min.js"></script>
+  <script src="{{ $.Site.Params.CDN.JQueryUI.Path }}/jqueryui/{{ $.Site.Params.CDN.JQueryUI.Version }}/jquery-ui.min.js"></script>
+  <script src="{{ $.Site.Params.CDN.JQueryTocify.Path }}/jquery.tocify/{{ $.Site.Params.CDN.JQueryTocify.Version }}/javascripts/jquery.tocify.min.js"></script>
   {{- end }}
 </head>
 <body>
