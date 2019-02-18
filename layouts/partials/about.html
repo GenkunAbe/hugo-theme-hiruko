@@ -9,15 +9,15 @@
 </div>
 <aside class="sidebar col-md-4 col-xs-12">
   <div class="aboutme widget">
-    <div class="about-me-image"></div>
-    <p class="about-me-text">Sometimes NAIVE.</p>
+    <div class="about-me-image" style="background-image: url('{{ $.Site.Params.AboutMe.ImagePath }}');"></div>
+    <p class="about-me-text">{{ $.Site.Params.Motto }}</p>
   </div>
   <div class="follow-me widget">
     <h3 class="aside-title">FOLLOW ME</h3>
     <div class="follow-icons">
-      <a href="https://github.com/GenkunAbe" target="_blank" class="github-link"></a>
-      <a href="https://twitter.com/GenkunAbe" target="_blank" class="twitter-link"></a>
-      <a href="https://weibo.com/genkunabe" target="_blank" class="weibo-link"></a>
+      {{- range $item := $.Site.Params.AboutMe.Links }}
+      <a href="{{ index $item 1 }}" target="_blank" class="{{ index $item 0 }}"></a>
+      {{- end }}
     </div>
   </div>
 </aside>
