@@ -4,7 +4,7 @@
 	{{ partial "navbar.html" . }}
 	<main class="hiruko-container">
 		<div class="articles">
-		{{ range $name, $page := .Site.Pages }}
+		{{ range $page := (.Paginator (.Param "Paginate")).Pages }}
 			{{ if eq $page.Params.type "post" }}
 			<article class="post-block">
 				<h2 class="post-title">
@@ -27,6 +27,7 @@
 			{{ end }}
 		{{ end }}
 		</div>
+		{{ partial "pagination.html" . }}
 	</main>
 </div>
 

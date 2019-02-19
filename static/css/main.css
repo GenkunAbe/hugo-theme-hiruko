@@ -1060,9 +1060,16 @@ h3.aside-title {
   margin: 0 auto;
   margin-bottom: 50px;
   overflow: hidden;
+  text-align: center;
 }
 
-.paginator a,
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.pagination > li > a, .pagination > li > span,
 .post-nav a {
   font-family: var(--sans-font);
   font-weight: 400;
@@ -1073,12 +1080,26 @@ h3.aside-title {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 6px 12px;
+  border: none;
 }
 
-.paginator a:hover,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
 .post-nav a:hover {
   text-decoration: none;
   color: #000;
+  background-color: #fff;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover {
+  z-index: 3;
+  color: #fff !important;
+  cursor: default;
+  background-color: #444;
+  border-color: #444;
 }
 
 .prev-wrap,

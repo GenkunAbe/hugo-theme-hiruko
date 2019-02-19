@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="{{ $.Site.LanguageCode }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+  {{ $isHomePage := eq .Title .Site.Title }}
+  <title>{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Description }}">
   <meta name="keywords" content="{{ .Keywords }}">
   <meta name="author" content="{{ .Site.Author.name }}">
