@@ -14,7 +14,7 @@
         <ul class="collapse navbar-collapse main-nav-items">
             {{- range $item := $.Site.Params.NavItems }}
             <li class="menu-item">
-                <a href="{{ index $item 1 }}" target="_self">{{ index $item 0 }}</a>
+                <a href="{{ index $item 1 }}" target="{{ index $item 2 }}">{{ index $item 0 }}</a>
             </li>
             {{- end }}
         </ul>
