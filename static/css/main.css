@@ -1056,7 +1056,7 @@ h3.aside-title {
 
 .paginator,
 .post-nav {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
   overflow: hidden;

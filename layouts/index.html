@@ -1,11 +1,10 @@
 {{ partial "header.html" . }}
-
 <div class="wrap">
 	{{ partial "navbar.html" . }}
 	<main class="hiruko-container">
 		<div class="articles">
-		{{ $paginator := .Paginate (where .Pages "Params.type" "post") .Site.Params.Paginate }}
-		{{ range $page := $paginator.Pages }}
+		{{- $paginator := .Paginate (where .Pages "Params.type" "post") .Site.Params.Paginate }}
+		{{- range $page := $paginator.Pages }}
 			<article class="post-block">
 				<h2 class="post-title">
 					<a href="{{ .Permalink }}" class="post-link">{{ $page.Title }}</a>
@@ -24,7 +23,7 @@
 					</div>
 				</div>
 			</article>
-		{{ end }}
+		{{- end }}
 		</div>
 		{{ partial "pagination.html" . }}
 	</main>
